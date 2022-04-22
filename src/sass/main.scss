@@ -12,16 +12,15 @@
 @import './base/reset';
 @import './base/page';
 @import './base/container';
-
 @import './base/commons';
 
-@import './components/header';
-@import './components/menu';
-@import './components/hero';
-@import './components/products';
-@import './components/about';
-@import './components/advantages';
-@import './components/gallery';
-@import './components/customer-reviews';
-@import './components/contacts';
-@import './components/footer';
+@import './layout/header';
+@import './layout/menu';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
+@import './layout/footer';
