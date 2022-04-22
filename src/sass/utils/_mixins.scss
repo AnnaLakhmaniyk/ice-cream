@@ -3,3 +3,11 @@
     @content;
   }
 }
+
+@mixin font($fw, $fs, $lh, $ls, $tt) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  text-transform: $tt;
+}

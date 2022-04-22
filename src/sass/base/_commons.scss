@@ -12,21 +12,12 @@
 
 .title {
   font-family: 'Titan One';
-  font-weight: 400;
-  font-size: 58px;
-  line-height: 66px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-
+  @include font(400, 58px, 1.13, 0.06em, uppercase);
   color: #d41443;
 }
 
 .button-dark {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-
+  @include font(700, 16px, 1.3, null, null);
   color: #ffffff;
   background: #d41443;
   border-radius: 20px;
@@ -40,10 +31,7 @@
 }
 
 .button-light {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-
+  @include font(700, 16px, 1.3, null, null);
   color: #d41443;
   background-color: #ffffff;
   border-radius: 20px;
