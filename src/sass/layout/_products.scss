@@ -1,0 +1,110 @@
+.products{
+    text-align: center;
+}
+.products__pre-title{
+    @include media(767px, max-width) {
+        margin: 121px 0 15px 0;
+    }
+}
+.products__title{
+    @include media(767px, max-width) {
+        margin-bottom: 144px;
+    }
+}
+.products__list{
+    @include media(767px, max-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 98px;
+    }
+    
+}
+.products__item{
+    position: relative;
+    background-color: $coffeeBgColor;
+    &:first-child{
+        background-color: $heroBgColor;
+    }
+    &:last-child{
+        background-color: $milkshakeBgColor;
+    }
+    border-radius: 24px;
+    @include media(767px, max-width) {
+        width: 280px;
+        height: 485px;
+        &:not(:last-child){
+            margin-bottom: 130px;
+        }
+    }
+}
+.products__img{
+    position: absolute;
+    top: -113px;
+    width: 100%;
+    height: 252px;
+    @include media(767px, max-width) {
+        background-size: 249px 100%;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+    }
+}
+.img-1{
+    background-image: url(..//..//src/images/product-ice1.png);
+}
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .img-1 {
+    background-image: url(..//..//src/images/product-ice1@2x.png);
+    }
+}
+.img-2{
+    background-image: url(..//..//src/images/product-ice2.png);
+}
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .img-2 {
+        background-image: url(..//..//src/images/product-ice2@2x.png);
+    }
+}
+.img-3{
+    background-image: url(..//..//src/images/product-ice3.png);
+}
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .img-3 {
+        background-image: url(..//..//src/images/product-ice3@2x.png);
+    }
+}
+.products__subtitle{
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1,15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $lightTextColor;
+    margin-bottom: 30px;
+    margin-top: 161px;
+
+}
+.products__points{
+    margin-bottom: 30px;
+}
+.products__subdescription{
+    @include media(767px, max-width) {
+        padding: 0 40px;
+        margin-bottom: 30px;
+        font-weight: 700;
+                font-size: 14px;
+                line-height: 1.52;
+                letter-spacing: 0.04em;
+                color: $lightTextColor;
+    }
+}
