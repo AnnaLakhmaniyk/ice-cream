@@ -1,13 +1,32 @@
 .pre-title {
   font-family: 'Titan One';
-  @include font(400, 30px, 1.13, 0.04em, uppercase);
+
+  @include media(767px, max-width) {
+    @include font(400, 18px, 1.17, 0.04em, uppercase);
+  }
+  @include media(768px) {
+    @include font(400, 26px, 1.15, 0.04em, uppercase);
+  }
+  @include media(1200px) {
+    @include font(400, 30px, 1.13, 0.04em, uppercase);
+  }
 
   color: $preTitleTextColor;
 }
 
 .title {
   font-family: 'Titan One';
-  @include font(400, 58px, 1.13, 0.06em, uppercase);
+
+  @include media(767px, max-width) {
+    @include font(400, 34px, 1.15, 0.06em, uppercase);
+  }
+  @include media(768px) {
+    @include font(400, 48px, 1.15, 0.06em, uppercase);
+  }
+  @include media(1200px) {
+    @include font(400, 58px, 1.13, 0.06em, uppercase);
+  }
+
   color: $accentColor;
 }
 
