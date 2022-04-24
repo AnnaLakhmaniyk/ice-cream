@@ -14,12 +14,19 @@
   }
 }
 
-.footer__duplicate-pre-title {
-  @include media(767px, max-width) {
-    margin-bottom: 17px;
+.footer__titles-box {
+  max-width: 234px;
+  margin-bottom: 43px;
+  @include media(768px) {
+    margin-bottom: 0;
   }
+}
+
+.footer__duplicate-pre-title {
+  margin-bottom: 17px;
   @include media(768px) {
     margin-bottom: 16px;
+    letter-spacing: 0.04em;
   }
   @include media(1200px) {
     margin-bottom: 15px;
@@ -27,8 +34,8 @@
 }
 
 .footer__duplicate-title {
-  @include media(767px, max-width) {
-    margin-bottom: 43px;
+  @include media(768px) {
+    letter-spacing: 0.06em;
   }
 }
 
