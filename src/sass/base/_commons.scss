@@ -1,33 +1,32 @@
 .pre-title {
   font-family: 'Titan One';
+  @include font(400, 18px, 1.17, 0, uppercase);
+  color: $preTitleTextColor;
 
-  @include media(767px, max-width) {
-    @include font(400, 18px, 1.17, 0.04em, uppercase);
-  }
   @include media(768px) {
-    @include font(400, 26px, 1.15, 0.04em, uppercase);
+    font-size: 26px;
+    line-height: 1.15;
   }
   @include media(1200px) {
-    @include font(400, 30px, 1.13, 0.04em, uppercase);
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
   }
-
-  color: $preTitleTextColor;
 }
 
 .title {
   font-family: 'Titan One';
+  @include font(400, 34px, 1.15, 0.04em, uppercase);
+  color: $accentColor;
 
-  @include media(767px, max-width) {
-    @include font(400, 34px, 1.15, 0.06em, uppercase);
-  }
   @include media(768px) {
-    @include font(400, 48px, 1.15, 0.06em, uppercase);
+    font-size: 48px;
   }
   @include media(1200px) {
-    @include font(400, 58px, 1.13, 0.06em, uppercase);
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0;
   }
-
-  color: $accentColor;
 }
 
 .button-accent {
