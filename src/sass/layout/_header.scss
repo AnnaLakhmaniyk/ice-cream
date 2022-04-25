@@ -1,8 +1,12 @@
+// ТИМЧАСОВО
+.page-header {
+  background-color: $heroBgColor;
+}
+
 .page-header__wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  outline: solid 1px red;
 }
 
 .logo {
@@ -18,31 +22,32 @@
 }
 
 .site-nav {
-  @include media(1199px, max-width) {
+  display: flex;
+
+  @include media(1279px, max-width) {
+    display: none;
+  }
+
+  &__wrap {
+    display: flex;
+  }
+}
+
+.mob-menu-open {
+  @include media(1280px) {
     display: none;
   }
 }
 
 .order-btn {
+  min-width: 160px;
+  margin-left: 30px;
+
+  &__icon {
+    margin-left: 12px;
+  }
+
   @include media(767px, max-width) {
     display: none;
-  }
-}
-
-.mob-menu-open {
-}
-
-.mob-menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 250px;
-  height: 100vh;
-  transform: translateX(100%);
-
-  background-color: $menuBgColor;
-
-  &.is-hidden {
-    transform: translateX(0);
   }
 }

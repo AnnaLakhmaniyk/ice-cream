@@ -1,0 +1,84 @@
+.backdrop-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  overflow-y: scroll;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+
+    & .mob-menu {
+      transform: translateX(0);
+    }
+  }
+
+  @include media(1280px) {
+    display: none;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+  background-color: $menuBgColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &__btn-close {
+    display: block;
+    padding: 23px;
+    margin-right: 5px;
+    margin-left: auto;
+  }
+
+  &__btn-order {
+    min-width: 209px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__btn-order-icon {
+    margin-left: 16px;
+  }
+
+  &__list {
+    margin-top: 19px;
+  }
+
+  &__item {
+    border-top: 1px solid #e18298;
+
+    &:last-child {
+      border-bottom: 1px solid #e18298;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 12px;
+    margin-left: 9px;
+    @include font(700, 14px, 1.28, null, null);
+    color: $lightTextColor;
+  }
+
+  @include media(768px) {
+    width: 254px;
+  }
+}
