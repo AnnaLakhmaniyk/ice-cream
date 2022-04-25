@@ -32,6 +32,7 @@
 .button-accent {
   height: 44px;
   @include centeredFlex;
+  padding: 0;
 
   @include font(700, 16px, 1.3, null, null);
   color: $lightTextColor;
@@ -49,6 +50,7 @@
 .button-primary {
   height: 44px;
   @include centeredFlex;
+  padding: 0;
 
   @include font(700, 16px, 1.3, null, null);
   color: $accentColor;

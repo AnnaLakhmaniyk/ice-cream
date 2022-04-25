@@ -1,0 +1,123 @@
+.contacts {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 113px;
+  padding-top: 86px;
+
+  background-image: linear-gradient(to bottom, #ffffff 10.5%, #fff5f6 10.5%, #fff5f6);
+}
+.contacts__list {
+  margin: 0 auto;
+}
+.contacts__list {
+  margin-bottom: 54px;
+}
+.contacts__item {
+  width: 220px;
+  min-height: 427px;
+  background-color: $lightTextColor;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 43px 20px;
+  margin: 0 auto;
+}
+.contacts__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.contacts__item-wrap {
+  display: flex;
+  margin-bottom: 25px;
+  height: 16px;
+  width: 80px;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: $coffeeBgColor;
+  border-radius: 4px;
+}
+.contacts__item-desc {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $lightTextColor;
+}
+.contacts__item-wrap.food {
+  background: $milkshakeBgColor;
+  width: 130px;
+}
+.contacts__item-city {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: $primaryTextColor;
+}
+.contacts__item-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $secondaryTextColor;
+  margin-top: 10px;
+}
+
+.contacts-wrap {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.contacts-wrap span {
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid $customersLinesColor;
+  bottom: -25px;
+}
+
+.contacts__item-day {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: $primaryTextColor;
+}
+.contacts__item-time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: $preTitleTextColor;
+}
+.contacts-wrap__time.upper {
+  margin-bottom: 10px;
+}
+
+.contacts__item-link {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $secondaryTextColor;
+  margin: 0;
+}
+
+.contacts-btn-wrap {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 161px;
+}
+.contacts-btn__location {
+  margin-bottom: 10px;
+}
+.contacts-btn__location-icon {
+  stroke: #ffffff;
+  margin-left: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.contacts-btn__franchise-icon {
+  stroke: #d41443;
+  margin-left: 13px;
+  justify-content: center;
+  align-items: center;
+}
