@@ -1,0 +1,48 @@
+.page-header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: solid 1px red;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Titan One';
+  @include font(null, 26px, 1.15, 0.03em, uppercase);
+  color: $accentColor;
+
+  &__item {
+    margin-right: 15px;
+  }
+}
+
+.site-nav {
+  @include media(1199px, max-width) {
+    display: none;
+  }
+}
+
+.order-btn {
+  @include media(767px, max-width) {
+    display: none;
+  }
+}
+
+.mob-menu-open {
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  transform: translateX(100%);
+
+  background-color: $menuBgColor;
+
+  &.is-hidden {
+    transform: translateX(0);
+  }
+}
