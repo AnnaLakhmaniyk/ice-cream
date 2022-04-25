@@ -4,7 +4,7 @@
   padding-bottom: 113px;
   padding-top: 86px;
 
-  background-image: linear-gradient(to bottom, #ffffff 10.5%, #fff5f6 10.5%, #fff5f6 89%);
+  background-image: linear-gradient(to bottom, #ffffff 10.5%, #fff5f6 10.5%, #fff5f6);
 }
 .contacts__list {
   margin: 0 auto;
@@ -86,7 +86,7 @@
   line-height: 1.83;
   color: $preTitleTextColor;
 }
-.contacts-wrap__time:not(:last-child) {
+.contacts-wrap__time.upper {
   margin-bottom: 10px;
 }
 
