@@ -1,46 +1,73 @@
-<section class="contacts">
-  <!-- заголовок не видображається -->
-  <h2>Contacts</h2>
+<section class="contacts container">
+  <h2 class="visually-hidden">Contacts</h2>
   <ul class="contacts__list">
     <li class="contacts__item">
       <span class="contacts__item-desc">CAFE</span>
-      <p class="contacts__item-city">Chicago</p>
-      <p class="contacts__item-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-      <p class="contacts__item-day">Monday - Friday</p>
-      <p class="contacts__item-time">06:00 AM - 10:00 PM</p>
-      <p class="contacts__item-day">Saturday - Sunday</p>
-      <p class="contacts__item-time">08:00 AM - 16:00 PM</p>
+      <div class="contacts-wrap">
+        <p class="contacts__item-city">Chicago</p>
+        <p class="contacts__item-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        <span></span>
+      </div>
+      <div class="contacts-wrap">
+        <p class="contacts__item-day">Monday - Friday</p>
+        <p class="contacts__item-time">06:00 AM - 10:00 PM</p>
+        <p class="contacts__item-day">Saturday - Sunday</p>
+        <p class="contacts__item-time">08:00 AM - 16:00 PM</p>
+        <span></span>
+      </div>
       <a href="tel:+610383766284" class="contacts__item-link">+61(0) 383 766 284 </a>
       <a href="mailto:noreply@envato.com" class="contacts__item-link">noreply@envato.com</a>
     </li>
 
     <li class="contacts__item">
-      <span class="contacts__item-desc">FOOD TRUCK</span>
-      <p class="contacts__item-city">Los Angeles</p>
-      <p class="contacts__item-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-      <p class="contacts__item-day">Monday - Friday</p>
-      <p class="contacts__item-time">06:00 AM - 10:00 PM</p>
-      <p class="contacts__item-day">Saturday - Sunday</p>
-      <p class="contacts__item-time">08:00 AM - 16:00 PM</p>
+      <span class="contacts__item-desc food">FOOD TRUCK</span>
+      <div class="contacts-wrap">
+        <p class="contacts__item-city">Los Angeles</p>
+        <p class="contacts__item-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        <span></span>
+      </div>
+      <div class="contacts-wrap">
+        <p class="contacts__item-day">Monday - Friday</p>
+        <p class="contacts__item-time">06:00 AM - 10:00 PM</p>
+        <p class="contacts__item-day">Saturday - Sunday</p>
+        <p class="contacts__item-time">08:00 AM - 16:00 PM</p>
+        <span></span>
+      </div>
       <a href="tel:+610383766284" class="contacts__item-link">+61(0) 383 766 284 </a>
       <a href="mailto:noreply@envato.com" class="contacts__item-link">noreply@envato.com</a>
     </li>
 
     <li class="contacts__item">
       <span class="contacts__item-desc">CAFE</span>
-      <p class="contacts__item-city">New York</p>
-      <p class="contacts__item-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-      <p class="contacts__item-day">Monday - Friday</p>
-      <p class="contacts__item-time">06:00 AM - 10:00 PM</p>
-      <p class="contacts__item-day">Saturday - Sunday</p>
-      <p class="contacts__item-time">08:00 AM - 16:00 PM</p>
+      <div class="contacts-wrap">
+        <p class="contacts__item-city">New York</p>
+        <p class="contacts__item-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        <span></span>
+      </div>
+      <div class="contacts-wrap">
+        <p class="contacts__item-day">Monday - Friday</p>
+        <p class="contacts__item-time">06:00 AM - 10:00 PM</p>
+        <p class="contacts__item-day">Saturday - Sunday</p>
+        <p class="contacts__item-time">08:00 AM - 16:00 PM</p>
+        <span></span>
+      </div>
       <a href="tel:+610383766284" class="contacts__item-link">+61(0) 383 766 284 </a>
       <a href="mailto:noreply@envato.com" class="contacts__item-link">noreply@envato.com</a>
     </li>
   </ul>
 
   <div class="contacts-btn">
-    <button type="button">Our Locations</button>
-    <button type="button">Franchise</button>
+    <button type="button" class="contacts-btn__accent button-accent">
+      Our Locations
+      <svg class="contacts-btn__accent-icon" width="10" height="10">
+        <use href="../src/images/sprite.svg#pointer-small"></use>
+      </svg>
+    </button>
+    <button type="button" class="contacts-btn__primary button-primary">
+      Franchise
+      <svg class="contacts-btn__primary-icon" width="10" height="10">
+        <use href="../src/images/sprite.svg#pointer-small"></use>
+      </svg>
+    </button>
   </div>
 </section>
