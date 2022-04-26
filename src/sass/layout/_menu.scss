@@ -2,7 +2,13 @@
 
 .page-header {
   background-color: $heroBgColor;
+  padding-top: 6px;
+
+  @include media(768px) {
+    padding-top: 37px;
+  }
 }
+
 .backdrop-menu {
   position: fixed;
   top: 0;
