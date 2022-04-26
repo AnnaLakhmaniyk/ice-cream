@@ -1,0 +1,112 @@
+.reviews {
+  padding-top: 80px;
+}
+
+.reviews__imag {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 29px;
+}
+
+.reviews__item-wrap-text {
+  padding: 71px 50px 20px 50px;
+  background-color: #fafafa;
+}
+
+.reviews__item {
+  position: relative;
+}
+
+.reviews__item::before {
+  content: '';
+  display: flex;
+  background-image: url(..//..//src/images/reviews“.svg);
+  background-position: center;
+  width: 54px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 30px;
+  top: 173px;
+  z-index: 1;
+
+  margin-bottom: 54px;
+}
+
+.reviews__item-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  color: $primaryTextColor;
+  background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 31px);
+  position: relative;
+  z-index: 2;
+}
+
+.reviews__item-wrap-name {
+  margin-top: 18px;
+  margin-bottom: 30px;
+}
+
+.reviews__wrap-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.reviews__wrap-span span {
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: $btnAccentHoverColor;
+  position: relative;
+}
+
+.reviews__wrap-span span::before,
+.reviews__wrap-span span::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 4px;
+  background-color: $btnAccentHoverColor;
+}
+
+.reviews__wrap-span span::before {
+  left: 10px;
+}
+
+.reviews__wrap-span span::after {
+  right: 10px;
+}
+
+.reviews__item-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.85;
+  text-align: center;
+  color: $primaryTextColor;
+}
+
+.swiper-pagination {
+  position: unset;
+}
+
+.swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+  background-image: url(..//..//src/images/reviews-home.svg);
+  width: 12px;
+  height: 13px;
+  background-position: center;
+  border-radius: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
