@@ -141,14 +141,6 @@
     }
   }
 
-  &__achievements-list {
-    margin-left: auto;
-
-    @include media(767px, max-width) {
-      display: none;
-    }
-  }
-
   &__img-milk {
     position: absolute;
     left: 34px;
@@ -195,6 +187,14 @@
     }
   }
 
+  &__achievements-list {
+    margin-left: auto;
+
+    @include media(767px, max-width) {
+      display: none;
+    }
+  }
+
   &__achievements-wrap {
     font-family: 'Titan One';
     @include font(400, 28px, 1.14, 0.04em, uppercase);
@@ -205,6 +205,18 @@
       font-size: 46px;
     }
   }
+
+  // &__achievements-wrap::before {
+  //   position: absolute;
+  //   right: 20px;
+
+  //   content: '';
+  //   display: block;
+  //   width: 16px;
+  //   height: 16px;
+  //   border-radius: 50px;
+  //   background-color: $lightTextColor;
+  // }
 
   &__achievements-text {
     @include font(400, 8px, 1.25, null, null);
