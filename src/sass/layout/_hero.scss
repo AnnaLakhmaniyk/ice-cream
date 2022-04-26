@@ -1,5 +1,7 @@
 .hero {
-  position: relative;
+  min-height: 502px;
+  padding-top: 193px;
+
   background: radial-gradient(
     22.5em 22.5em at 67% 52%,
     $heroCircleColor 50%,
@@ -8,39 +10,48 @@
   );
 
   @include media(768px) {
-    background: radial-gradient(
-      20em 20em at 55% 48%,
-      $heroCircleColor 50%,
-      transparent 50%,
-      $heroBgColor 50%
-    );
-  }
-
-  @include media(1280px) {
-    background: radial-gradient(
-      33em 33em at 57% 48%,
-      $heroCircleColor 50%,
-      transparent 50%,
-      $heroBgColor 50%
-    );
-  }
-
-  min-height: 502px;
-  padding-top: 193px;
-
-  @include media(768px) {
     padding-top: 102px;
     min-height: 399px;
+    background: radial-gradient(
+      20em 20em at 59% 48%,
+      $heroCircleColor 50%,
+      transparent 50%,
+      $heroBgColor 50%
+    );
   }
 
   @include media(1280px) {
     padding-top: 171px;
     min-height: 665px;
+    background: radial-gradient(
+      33.5em 33.5em at 57% 48%,
+      $heroCircleColor 50%,
+      transparent 50%,
+      $heroBgColor 50%
+    );
   }
 
-  &__content {
+  &__container {
+    position: relative;
+
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    @include media(479px, max-width) {
+      width: 100%;
+    }
+    @include media(480px) {
+      width: 480px;
+    }
+    @include media(768px) {
+      width: 740px;
+    }
+    @include media(1280px) {
+      width: 1090px;
+    }
   }
 
   &__wrap {
@@ -131,6 +142,8 @@
   }
 
   &__achievements-list {
+    margin-left: auto;
+
     @include media(767px, max-width) {
       display: none;
     }
@@ -139,46 +152,46 @@
   &__img-milk {
     position: absolute;
     left: 34px;
-    bottom: 28px;
+    bottom: -2px;
 
     @include media(767px, max-width) {
       display: none;
     }
 
     @include media(1280px) {
-      left: 77px;
-      bottom: 45px;
+      left: -14px;
+      bottom: -5px;
     }
   }
 
   &__img-ice-cream {
     position: absolute;
-    bottom: 0;
+    bottom: -158px;
     right: 31px;
 
     @include media(768px) {
-      bottom: 0;
+      bottom: -27px;
       right: 247px;
     }
 
     @include media(1280px) {
-      bottom: 0;
-      right: 450px;
+      bottom: -48px;
+      right: 355px;
     }
   }
 
   &__img-girl {
     position: absolute;
     right: 34px;
-    bottom: 0;
+    bottom: -27px;
 
     @include media(767px, max-width) {
       display: none;
     }
 
     @include media(1280px) {
-      right: 109px;
-      bottom: 0px;
+      right: 14px;
+      bottom: -48px;
     }
   }
 
