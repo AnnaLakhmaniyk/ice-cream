@@ -12,12 +12,12 @@
     &--big {
       border-radius: 7px;
     }
-    @include media(480px) {
-      border-radius: 8px;
-      &--big {
-        border-radius: 8px;
-      }
-    }
+    // @include media(480px) {
+    //   border-radius: 8px;
+    //   &--big {
+    //     border-radius: 8px;
+    //   }
+    // }
   }
 
   &__list {
@@ -30,9 +30,9 @@
     &:not(:last-child) {
       margin-right: 1px;
 
-      @include media(480px) {
-        margin-right: 2px;
-      }
+      // @include media(480px) {
+      //   margin-right: 2px;
+      // }
     }
 
     &--first {
@@ -56,17 +56,21 @@
     }
   }
   &__card {
-    width: 40px;
+    min-width: 40px;
+    max-width: 60px;
+    width: 100%;
     &--medium-big {
-      width: 82px;
+      min-width: 82px;
+      max-width: 123px;
+      width: 100%;
     }
 
-    @include media(480px) {
-      width: 52px;
-      &--medium-big {
-        width: 106px;
-      }
-    }
+    // @include media(480px) {
+    //   width: 52px;
+    //   &--medium-big {
+    //     width: 106px;
+    //   }
+    // }
     &:hover,
     &:focus {
       transform: scale(1.5);
@@ -75,9 +79,9 @@
 
     &--medium:first-child {
       margin-bottom: 1px;
-      @include media(480px) {
-        margin-bottom: 2px;
-      }
+      // @include media(480px) {
+      //   margin-bottom: 2px;
+      // }
     }
   }
 }
