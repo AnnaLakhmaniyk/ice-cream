@@ -48,10 +48,19 @@
     margin-left: auto;
   }
 
+  &__btn-close-icon {
+    display: block;
+  }
+
   &__btn-order {
     min-width: 209px;
     margin-left: auto;
     margin-right: auto;
+    stroke: currentColor;
+
+    @include media(768px) {
+      min-width: 189px;
+    }
   }
 
   &__btn-order-icon {
@@ -76,6 +85,11 @@
     margin-left: 9px;
     @include font(700, 14px, 1.28, null, null);
     color: $lightTextColor;
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
   }
 
   @include media(768px) {

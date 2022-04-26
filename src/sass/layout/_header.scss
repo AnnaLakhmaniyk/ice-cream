@@ -22,32 +22,60 @@
 }
 
 .site-nav {
-  display: flex;
-
   @include media(1279px, max-width) {
     display: none;
   }
 
-  &__wrap {
+  &__item:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  &__list {
     display: flex;
+  }
+
+  &__link {
+    display: block;
+    padding: 10px;
+
+    @include font(700, 16px, 1.31, null, null);
+    color: $lightTextColor;
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
   }
 }
 
+.site-nav__wrap {
+  display: flex;
+}
+
 .mob-menu-open {
+  padding: 15px;
   @include media(1280px) {
     display: none;
+  }
+
+  &__icon {
+    display: block;
   }
 }
 
 .order-btn {
   min-width: 160px;
-  margin-left: 30px;
 
   &__icon {
     margin-left: 12px;
+    stroke: currentColor;
   }
 
   @include media(767px, max-width) {
     display: none;
+  }
+
+  @include media(1279px, max-width) {
+    margin-left: 15px;
   }
 }
