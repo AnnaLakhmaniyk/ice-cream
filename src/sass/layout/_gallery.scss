@@ -59,10 +59,17 @@
     min-width: 40px;
     max-width: 60px;
     width: 100%;
+
     &--medium-big {
       min-width: 82px;
       max-width: 123px;
       width: 100%;
+    }
+
+    &--medium-small {
+      min-width: 40px;
+      max-width: 60px;
+      width: 49%;
     }
 
     // @include media(480px) {
