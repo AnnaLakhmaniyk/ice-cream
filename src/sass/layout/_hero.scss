@@ -1,6 +1,6 @@
 .hero {
   background-color: $heroBgColor;
-  position: relative;
+
   min-height: 502px;
   padding-top: 193px;
 
@@ -10,6 +10,7 @@
   }
 
   &__content {
+    position: relative;
     display: flex;
     justify-content: space-between;
   }
@@ -27,6 +28,10 @@
 
     @include media(768px) {
       font-size: 22px;
+    }
+
+    @include media(1280px) {
+      font-size: 38px;
     }
   }
 
@@ -93,8 +98,14 @@
     position: absolute;
     left: 34px;
     bottom: 28px;
+
     @include media(767px, max-width) {
       display: none;
+    }
+
+    @include media(1280px) {
+      left: 77px;
+      bottom: 45px;
     }
   }
 
@@ -107,14 +118,25 @@
       bottom: 0;
       right: 247px;
     }
+
+    @include media(1280px) {
+      bottom: 0;
+      right: 450px;
+    }
   }
 
   &__img-girl {
     position: absolute;
     right: 34px;
     bottom: 0;
+
     @include media(767px, max-width) {
       display: none;
+    }
+
+    @include media(1280px) {
+      right: 109px;
+      bottom: 0px;
     }
   }
 
