@@ -1,6 +1,29 @@
 .hero {
-  background-color: $heroBgColor;
   position: relative;
+  background: radial-gradient(
+    22.5em 22.5em at 67% 52%,
+    $heroCircleColor 50%,
+    transparent 50%,
+    $heroBgColor 50%
+  );
+
+  @include media(768px) {
+    background: radial-gradient(
+      20em 20em at 55% 48%,
+      $heroCircleColor 50%,
+      transparent 50%,
+      $heroBgColor 50%
+    );
+  }
+
+  @include media(1280px) {
+    background: radial-gradient(
+      33em 33em at 57% 48%,
+      $heroCircleColor 50%,
+      transparent 50%,
+      $heroBgColor 50%
+    );
+  }
 
   min-height: 502px;
   padding-top: 193px;
