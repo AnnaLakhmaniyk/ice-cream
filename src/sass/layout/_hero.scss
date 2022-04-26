@@ -1,5 +1,6 @@
 .hero {
   background-color: $heroBgColor;
+  position: relative;
 
   min-height: 502px;
   padding-top: 193px;
@@ -9,8 +10,12 @@
     min-height: 399px;
   }
 
+  @include media(1280px) {
+    padding-top: 171px;
+    min-height: 665px;
+  }
+
   &__content {
-    position: relative;
     display: flex;
     justify-content: space-between;
   }
@@ -32,6 +37,7 @@
 
     @include media(1280px) {
       font-size: 38px;
+      margin-bottom: 25px;
     }
   }
 
@@ -43,6 +49,10 @@
     @include media(768px) {
       font-size: 34px;
     }
+
+    @include media(1280px) {
+      font-size: 58px;
+    }
   }
 
   &__list-link {
@@ -50,6 +60,10 @@
 
     @include media(768px) {
       margin-bottom: 66px;
+    }
+
+    @include media(1280px) {
+      margin-bottom: 112px;
     }
   }
 
@@ -64,6 +78,11 @@
     padding: 8px;
     border-radius: 22px;
     @include font(400, 8px, 1.25, null, null);
+
+    @include media(1280px) {
+      padding: 13px 20px;
+      font-size: 14px;
+    }
 
     &--primary {
       color: $accentColor;
@@ -145,12 +164,20 @@
     @include font(400, 28px, 1.14, 0.04em, uppercase);
     color: $accentColor;
     text-align: end;
+
+    @include media(1280px) {
+      font-size: 46px;
+    }
   }
 
   &__achievements-text {
     @include font(400, 8px, 1.25, null, null);
     text-align: end;
     color: $lightTextColor;
+
+    @include media(1280px) {
+      font-size: 14px;
+    }
   }
 }
 
@@ -158,18 +185,34 @@
   width: 114px;
   margin-left: 134px;
 
+  @include media(1280px) {
+    width: 200px;
+    margin-left: 200px;
+  }
+
   &__link {
     @include centeredFlex;
     width: 18px;
     height: 18px;
     border-radius: 50%;
     background-color: $primaryBgColor;
+
+    @include media(1280px) {
+      width: 26px;
+      height: 26px;
+    }
   }
 
   &__text {
     margin-bottom: 7px;
     @include font(400, 8px, 1.5, null, null);
     color: $lightTextColor;
+
+    @include media(1280px) {
+      font-size: 14px;
+      line-height: 1.4;
+      margin-bottom: 20px;
+    }
   }
 
   &__icon {
