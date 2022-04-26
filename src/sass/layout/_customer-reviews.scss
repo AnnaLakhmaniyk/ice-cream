@@ -1,5 +1,11 @@
 .reviews {
   padding-top: 80px;
+  @include media(768px) {
+    padding-top: 121px;
+  }
+  @include media(1280px) {
+    padding-top: 123px;
+  }
 }
 
 .reviews__imag {
