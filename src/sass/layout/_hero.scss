@@ -2,9 +2,16 @@
   background-color: $heroBgColor;
   position: relative;
   min-height: 502px;
+  padding-top: 193px;
+
+  @include media(768px) {
+    padding-top: 102px;
+    min-height: 399px;
+  }
 
   &__content {
-    padding-top: 193px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__wrap {
@@ -17,16 +24,28 @@
     font-family: 'Titan One';
     @include font(400, 26px, 1.15, 0.04em, uppercase);
     color: $lightTextColor;
+
+    @include media(768px) {
+      font-size: 22px;
+    }
   }
 
   &__tittle-big-text {
-    font-size: 48px;
+    font-size: 46px;
     line-height: 0.8;
     color: $accentColor;
+
+    @include media(768px) {
+      font-size: 34px;
+    }
   }
 
   &__list-link {
     display: flex;
+
+    @include media(768px) {
+      margin-bottom: 66px;
+    }
   }
 
   &__item-link + &__item-link {
@@ -37,7 +56,7 @@
     display: inline-flex;
     justify-content: center;
 
-    padding: 10px;
+    padding: 8px;
     border-radius: 22px;
     @include font(400, 8px, 1.25, null, null);
 
@@ -71,6 +90,9 @@
   }
 
   &__img-milk {
+    position: absolute;
+    left: 34px;
+    bottom: 28px;
     @include media(767px, max-width) {
       display: none;
     }
@@ -79,17 +101,59 @@
   &__img-ice-cream {
     position: absolute;
     bottom: 0;
-    right: 7.8%;
+    right: 31px;
+
+    @include media(768px) {
+      bottom: 0;
+      right: 247px;
+    }
   }
 
   &__img-girl {
+    position: absolute;
+    right: 34px;
+    bottom: 0;
     @include media(767px, max-width) {
       display: none;
     }
   }
+
+  &__achievements-wrap {
+    font-family: 'Titan One';
+    @include font(400, 28px, 1.14, 0.04em, uppercase);
+    color: $accentColor;
+    text-align: end;
+  }
+
+  &__achievements-text {
+    @include font(400, 8px, 1.25, null, null);
+    text-align: end;
+    color: $lightTextColor;
+  }
 }
 
 .hero-description {
+  width: 114px;
+  margin-left: 134px;
+
+  &__link {
+    @include centeredFlex;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $primaryBgColor;
+  }
+
+  &__text {
+    margin-bottom: 7px;
+    @include font(400, 8px, 1.5, null, null);
+    color: $lightTextColor;
+  }
+
+  &__icon {
+    display: block;
+  }
+
   @include media(767px, max-width) {
     display: none;
   }
