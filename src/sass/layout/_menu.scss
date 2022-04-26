@@ -1,3 +1,8 @@
+// ТИМЧАСОВО
+
+.page-header {
+  background-color: $heroBgColor;
+}
 .backdrop-menu {
   position: fixed;
   top: 0;
@@ -56,7 +61,6 @@
     min-width: 209px;
     margin-left: auto;
     margin-right: auto;
-    stroke: currentColor;
 
     @include media(768px) {
       min-width: 189px;
@@ -64,6 +68,7 @@
   }
 
   &__btn-order-icon {
+    stroke: currentColor;
     margin-left: 16px;
   }
 
@@ -80,9 +85,9 @@
   }
 
   &__link {
-    display: inline-block;
-    padding: 12px;
-    margin-left: 9px;
+    display: block;
+    padding: 12px 21px;
+
     @include font(700, 14px, 1.28, null, null);
     color: $lightTextColor;
 
