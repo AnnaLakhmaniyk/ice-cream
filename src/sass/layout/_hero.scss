@@ -1,0 +1,95 @@
+.hero {
+  background-color: $heroBgColor;
+  position: relative;
+  min-height: 502px;
+
+  &__content {
+    padding-top: 193px;
+  }
+
+  &__wrap {
+    z-index: 1;
+  }
+
+  &__tittle {
+    margin-bottom: 20px;
+    font-family: 'Titan One';
+    @include font(400, 26px, 1.15, 0.04em, uppercase);
+    color: $lightTextColor;
+  }
+
+  &__tittle-big-text {
+    font-size: 48px;
+    line-height: 0.8;
+    color: $accentColor;
+  }
+
+  &__list-link {
+    display: flex;
+  }
+
+  &__item-link + &__item-link {
+    margin-left: 8px;
+  }
+
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+
+    padding: 10px;
+    border-radius: 22px;
+    @include font(400, 8px, 1.25, null, null);
+
+    &--primary {
+      color: $accentColor;
+      background-color: $primaryBgColor;
+      min-width: 82px;
+
+      &:hover,
+      &:focus {
+        background-color: $btnPrimaryHoverColor;
+      }
+    }
+
+    &--accent {
+      background-color: $accentColor;
+      color: $lightTextColor;
+      min-width: 62px;
+
+      &:hover,
+      &:focus {
+        background-color: $btnAccentHoverColor;
+      }
+    }
+  }
+
+  &__achievements-list {
+    @include media(767px, max-width) {
+      display: none;
+    }
+  }
+
+  &__img-milk {
+    @include media(767px, max-width) {
+      display: none;
+    }
+  }
+
+  &__img-ice-cream {
+    position: absolute;
+    bottom: 0;
+    right: 7.8%;
+  }
+
+  &__img-girl {
+    @include media(767px, max-width) {
+      display: none;
+    }
+  }
+}
+
+.hero-description {
+  @include media(767px, max-width) {
+    display: none;
+  }
+}
