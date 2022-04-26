@@ -16,14 +16,18 @@
 }
 
 .footer__titles-box {
-  max-width: 234px;
+  width: 100%;
+  min-width: 234px;
+  max-width: 70%;
   margin-bottom: 43px;
   @include media(768px) {
+    width: 340px;
     max-width: 340px;
     padding-top: 7px;
     margin-bottom: 0;
   }
   @include media(1280px) {
+    width: max-content;
     max-width: max-content;
     padding-top: 0;
   }
