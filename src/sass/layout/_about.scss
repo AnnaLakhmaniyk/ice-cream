@@ -1,8 +1,22 @@
 .about {
   background-color: $secondaryBgColor;
   padding-top: 125px;
+  background-image: url(..//..//src/images/section.milk.mob.png);
+
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+
   @include media(768px) {
     padding-top: 130px;
+    background-image: none;
+  }
+  @include media(1280px) {
+    background-image: url(..//..//src/images/section.milk.png);
+
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
   }
 }
 
