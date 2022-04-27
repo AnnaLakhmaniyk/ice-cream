@@ -44,7 +44,12 @@
     }
 
 .about__btn {
+        height: 24px;
+        width: 24px;
+        display: flex;
+        justify-content: center;
         position: absolute;
+        align-items: center;
         right: 28px;
         top: 22px;
         background-color: $heroBgColor;
@@ -62,12 +67,12 @@
 }
 .backdrop__article{
     @include font(500, 16px, 1.76, 0.04em, none);
-color: #000000;
+color: $primaryTextColor;
 margin-bottom: 16px;
 }
 .backdrop__text{
     @include font(500, 14px, 1.94, 0.04em, none);
-color: #907E82;
+color: $secondaryTextColor;
 }
 .backdrop__margin{
     padding: 35px 0 35px 0;
