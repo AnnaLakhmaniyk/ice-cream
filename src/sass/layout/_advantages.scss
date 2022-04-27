@@ -18,8 +18,11 @@
 }
 
 .advantages___items {
+  // &:nth-child(1) {
+  //   background-image: url(../../images/Advantages3.png);
+  //   background-repeat: no-repeat;
+  // }
   width: 100%;
-
   outline: 2px solid red;
   margin-bottom: 38px;
   &:last-child {
