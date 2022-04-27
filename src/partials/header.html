@@ -1,27 +1,27 @@
 <header class="page-header">
-  <div class="container">
+  <div class="container page-header__wrap">
     <a class="logo" href="../src/index.html">
-      <svg class="logo__item">
-        <use></use>
+      <svg class="logo__item" width="50" height="50">
+        <use href="../src/images/sprite.svg#logo"></use>
       </svg>
       icecream</a
     >
     <nav class="site-nav">
       <ul class="site-nav__list">
         <li class="site-nav__item">
-          <a class="site-nav__link" href="">Home</a>
+          <a class="site-nav__link" href="../src/index.html">Home</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="">About us</a>
+          <a class="site-nav__link" href="#about">About us</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="">How it’s made?</a>
+          <a class="site-nav__link" href="#howmade">How it’s made?</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="">Our products</a>
+          <a class="site-nav__link" href="#ourproducts">Our products</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="">Contact</a>
+          <a class="site-nav__link" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
@@ -32,49 +32,57 @@
         type="button"
         aria-controls="mob-menu"
         aria-label="mobile menu switch"
+        data-menu-open
       >
         <svg class="mob-menu-open__icon" width="20" height="12">
-          <use></use>
+          <use href="../src/images/sprite.svg#burger"></use>
         </svg>
       </button>
-      <button class="order-btn" type="button">
+      <button class="order-btn button-primary" type="button">
         Buy now
         <svg class="order-btn__icon" width="4" height="8">
-          <use></use>
+          <use href="../src/images/sprite.svg#pointer-small"></use>
         </svg>
       </button>
     </div>
-
-    <div class="mob-menu" id="mob-menu">
-      <button class="mob-menu-close" type="button" aria-label="mobile menu switch">
-        <svg class="mob-menu-close__icon" width="14" height="14">
-          <use></use>
-        </svg>
-      </button>
-      <button class="mob-menu-order" type="button">
-        Buy now
-        <svg class="mob-menu-order__icon" width="5" height="8">
-          <use></use>
-        </svg>
-      </button>
-
-      <ul class="mob-menu__list" aria-label="mobile menu list">
-        <li class="mob-menu__item">
-          <a class="mob-menu__link" href="">Home</a>
-        </li>
-        <li class="mob-menu__item">
-          <a class="mob-menu__link" href="">About us</a>
-        </li>
-        <li class="mob-menu__item">
-          <a class="mob-menu__link" href="">How it’s made?</a>
-        </li>
-        <li class="mob-menu__item">
-          <a class="mob-menu__link" href="">Our products</a>
-        </li>
-        <li class="mob-menu__item">
-          <a class="mob-menu__link" href="">Contact</a>
-        </li>
-      </ul>
+    <div class="backdrop-menu" data-menu>
+      <div class="mob-menu" id="mob-menu">
+        <button
+          class="mob-menu__btn-close"
+          type="button"
+          aria-label="mobile menu switch"
+          data-menu-close
+        >
+          <svg class="mob-menu__btn-close-icon" width="14" height="14">
+            <use href="../src/images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <button class="mob-menu__btn-order button-primary" type="button">
+          Buy now
+          <svg class="mob-menu__btn-order-icon" width="5" height="8">
+            <use href="../src/images/sprite.svg#pointer-small"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="mob-menu__list" aria-label="mobile menu list">
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="../src/index.html">Home</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="#about">About us</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="#howmade">How it’s made?</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="#ourproducts">Our products</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 </header>

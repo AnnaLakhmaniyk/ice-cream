@@ -1,28 +1,73 @@
-<h2>Customer Reviews</h2>
-<!-- заголовок не видображається -->
-<ul class="reviews__list">
-  <li class="reviews__item">
-    <img src="" alt="" />
-    <p class="reviews__item-text">
-      Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
-      nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-    </p>
-    <p class="reviews__item-name">Emily, Los Angeles</p>
-  </li>
-  <li class="reviews__item">
-    <img src="" alt="" />
-    <p class="reviews__item-text">
-      Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
-      nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-    </p>
-    <p class="reviews__item-name">Emily, Los Angeles</p>
-  </li>
-  <li class="reviews__item">
-    <img src="" alt="" />
-    <p class="reviews__item-text">
-      Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
-      nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-    </p>
-    <p class="reviews__item-name">Emily, Los Angeles</p>
-  </li>
-</ul>
+<section class="reviews">
+  <div class="container">
+    <h2 class="visually-hidden">Customer Reviews</h2>
+    <!-- заголовок не видображається -->
+    <div class="swiper mySwiper">
+      <ul class="reviews__list swiper-wrapper">
+        <li class="reviews__item swiper-slide">
+          <div class="reviews__imag">
+            <picture>
+              <source srcset="../src/images/reviews1.1x.png 1x, ../src/images/reviews1.2x.png 2x" />
+              <img src="../src/images/reviews1.mob.png" alt="" width="85px" height="85px" />
+            </picture>
+          </div>
+          <div class="reviews__item-wrap-text">
+            <p class="reviews__item-text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+          <div class="reviews__wrap-span">
+            <span></span>
+          </div>
+          <div class="reviews__item-wrap-name">
+            <p class="reviews__item-name">Emily, Los Angeles</p>
+          </div>
+        </li>
+
+        <li class="reviews__item swiper-slide">
+          <div class="reviews__imag">
+            <picture>
+              <source srcset="../src/images/reviews2.1x.png 1x, ../src/images/reviews2.2x.png 2x" />
+              <img src="../src/images/reviews2.mob.png" alt="" width="85px" height="85px" />
+            </picture>
+          </div>
+          <div class="reviews__item-wrap-text">
+            <p class="reviews__item-text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+          <div class="reviews__wrap-span">
+            <span></span>
+          </div>
+          <div class="reviews__item-wrap-name">
+            <p class="reviews__item-name">Maria, New-York</p>
+          </div>
+        </li>
+
+        <li class="reviews__item swiper-slide">
+          <div class="reviews__imag">
+            <picture>
+              <source srcset="../src/images/reviews3.1x.png 1x, ../src/images/reviews3.2x.png 2x" />
+              <img src="../src/images/reviews3.mob.png" alt="" width="85px" height="85px" />
+            </picture>
+          </div>
+          <div class="reviews__item-wrap-text">
+            <p class="reviews__item-text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+          <div class="reviews__wrap-span">
+            <span></span>
+          </div>
+          <div class="reviews__item-wrap-name">
+            <p class="reviews__item-name">Anna, Chicago</p>
+          </div>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,181 @@
+.gallery {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 245, 246, 1) 0%,
+    rgba(255, 245, 246, 1) 40%,
+    rgba(255, 255, 255, 1) 40%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  &__img {
+    border-radius: 6px;
+    &--big {
+      border-radius: 7px;
+    }
+    @include media(350px) {
+      border-radius: 7px;
+      &--big {
+        border-radius: 8px;
+      }
+    }
+    @include media(400px) {
+      border-radius: 8px;
+      &--big {
+        border-radius: 9px;
+      }
+    }
+    @include media(460px) {
+      border-radius: 9px;
+      &--big {
+        border-radius: 10px;
+      }
+    }
+    @include media(768px) {
+      border-radius: 14px;
+      &--big {
+        border-radius: 15px;
+      }
+    }
+
+    @include media(1280px) {
+      border-radius: 20px;
+      &--big {
+        border-radius: 20px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 1px;
+
+      @include media(480px) {
+        margin-right: 2px;
+      }
+
+      @include media(768px) {
+        margin-right: 4px;
+      }
+
+      @include media(1280px) {
+        margin-right: 6px;
+      }
+    }
+
+    &--first {
+      margin-top: 40px;
+      @include media(768px) {
+        margin-top: 87px;
+      }
+
+      @include media(1280px) {
+        margin-top: 142px;
+      }
+    }
+
+    &--second {
+      margin-top: 25px;
+      @include media(768px) {
+        margin-top: 53px;
+      }
+
+      @include media(1280px) {
+        margin-top: 87px;
+      }
+    }
+
+    &--fourth {
+      margin-top: 28px;
+      @include media(768px) {
+        margin-top: 61px;
+      }
+
+      @include media(1280px) {
+        margin-top: 100px;
+      }
+    }
+
+    &--fifth {
+      margin-top: 15px;
+      @include media(768px) {
+        margin-top: 32px;
+      }
+
+      @include media(1280px) {
+        margin-top: 53px;
+      }
+    }
+
+    &--sixth {
+      margin-top: 43px;
+      @include media(768px) {
+        margin-top: 94px;
+      }
+
+      @include media(1280px) {
+        margin-top: 153px;
+      }
+    }
+  }
+  &__card {
+    min-width: 40px;
+    max-width: 60px;
+    width: 100%;
+
+    @include media(768px) {
+      min-width: 86px;
+      max-width: 140px;
+      width: 100%;
+    }
+
+    &--medium-big {
+      min-width: 82px;
+      max-width: 123px;
+      width: 100%;
+
+      @include media(768px) {
+        min-width: 175px;
+        max-width: 285px;
+        width: 100%;
+      }
+    }
+
+    &--medium-small {
+      min-width: 40px;
+      max-width: 60px;
+      width: 49%;
+
+      @include media(768px) {
+        min-width: 82px;
+        max-width: 123px;
+        width: 49%;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.5);
+    }
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--medium:first-child {
+      margin-bottom: 1px;
+
+      @include media(480px) {
+        margin-bottom: 2px;
+      }
+      @include media(768px) {
+        margin-bottom: 4px;
+      }
+      @include media(1280px) {
+        margin-bottom: 6px;
+      }
+    }
+  }
+}

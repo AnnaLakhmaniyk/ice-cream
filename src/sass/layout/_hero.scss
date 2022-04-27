@@ -1,0 +1,290 @@
+.hero {
+  background-color: $heroBgColor;
+
+  @include media(767px, max-width) {
+    background: radial-gradient(
+      22.5em 22.5em at 67% 52%,
+      $heroCircleColor 50%,
+      transparent 50%,
+      $heroBgColor 50%
+    );
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    min-height: 502px;
+    padding-top: 193px;
+
+    @include media(768px) {
+      padding-top: 102px;
+      min-height: 399px;
+
+      background: radial-gradient(
+        20em 20em at 59% 48%,
+        $heroCircleColor 50%,
+        transparent 50%,
+        $heroBgColor 50%
+      );
+    }
+
+    @include media(1280px) {
+      padding-top: 171px;
+      min-height: 665px;
+      background: radial-gradient(
+        33.5em 33.5em at 59% 48%,
+        $heroCircleColor 50%,
+        transparent 50%,
+        $heroBgColor 50%
+      );
+    }
+  }
+
+  &__wrap {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__tittle {
+    margin-bottom: 20px;
+    font-family: 'Titan One';
+    @include font(400, 26px, 1.15, 0.04em, uppercase);
+    color: $lightTextColor;
+
+    @include media(768px) {
+      font-size: 22px;
+    }
+
+    @include media(1280px) {
+      font-size: 38px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__tittle-big-text {
+    font-size: 46px;
+    line-height: 0.8;
+    color: $accentColor;
+
+    @include media(768px) {
+      font-size: 34px;
+    }
+
+    @include media(1280px) {
+      font-size: 58px;
+    }
+  }
+
+  &__list-link {
+    display: flex;
+
+    @include media(768px) {
+      margin-bottom: 66px;
+    }
+
+    @include media(1280px) {
+      margin-bottom: 112px;
+    }
+  }
+
+  &__item-link + &__item-link {
+    margin-left: 8px;
+
+    @include media(1280px) {
+      margin-left: 15px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+
+    padding: 8px;
+    border-radius: 22px;
+    @include font(400, 8px, 1.25, null, null);
+
+    @include media(1280px) {
+      padding: 13px 20px;
+      font-size: 14px;
+    }
+
+    &--primary {
+      color: $accentColor;
+      background-color: $primaryBgColor;
+      min-width: 82px;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        background-color: $btnPrimaryHoverColor;
+      }
+    }
+
+    &--accent {
+      background-color: $accentColor;
+      color: $lightTextColor;
+      min-width: 62px;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        background-color: $btnAccentHoverColor;
+      }
+    }
+  }
+
+  &__img-milk {
+    position: absolute;
+    left: 24px;
+    bottom: 28px;
+
+    @include media(767px, max-width) {
+      display: none;
+    }
+
+    @include media(1280px) {
+      left: -14px;
+      bottom: 45px;
+    }
+  }
+
+  &__img-ice-cream {
+    position: absolute;
+    bottom: 0;
+    right: 31px;
+
+    @include media(768px) {
+      bottom: 0;
+      right: 247px;
+    }
+
+    @include media(1280px) {
+      bottom: 0;
+      right: 355px;
+    }
+  }
+
+  &__img-girl {
+    position: absolute;
+    right: 29px;
+    bottom: 0;
+
+    @include media(767px, max-width) {
+      display: none;
+    }
+
+    @include media(1280px) {
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__achievements-list {
+    margin-left: auto;
+
+    @include media(767px, max-width) {
+      display: none;
+    }
+  }
+
+  &__achievements-item {
+    margin-bottom: 14px;
+
+    @include media(1280px) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__achievements-wrap {
+    position: relative;
+    z-index: 1;
+
+    font-family: 'Titan One';
+    @include font(400, 28px, 1.14, 0.04em, uppercase);
+    color: $accentColor;
+    text-align: end;
+
+    @include media(1280px) {
+      font-size: 46px;
+    }
+  }
+
+  &__achievements-wrap::before {
+    position: absolute;
+    top: -3px;
+    right: -9px;
+    content: '';
+    display: block;
+    z-index: -1;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    background-color: $lightTextColor;
+
+    @include media(1280px) {
+      width: 30px;
+      height: 30px;
+      top: -6px;
+      right: -15px;
+    }
+  }
+
+  &__achievements-text {
+    @include font(400, 8px, 1.25, null, null);
+    text-align: end;
+    color: $lightTextColor;
+
+    @include media(1280px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.hero-description {
+  width: 114px;
+  margin-left: 134px;
+
+  @include media(1280px) {
+    width: 200px;
+    margin-left: 200px;
+  }
+
+  &__link {
+    @include centeredFlex;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $primaryBgColor;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include media(1280px) {
+      width: 26px;
+      height: 26px;
+    }
+
+    &::hover,
+    &::focus {
+      background-color: $btnAccentHoverColor;
+    }
+  }
+
+  &__text {
+    margin-bottom: 7px;
+    @include font(400, 8px, 1.5, null, null);
+    color: $lightTextColor;
+
+    @include media(1280px) {
+      font-size: 14px;
+      line-height: 1.4;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__icon {
+    display: block;
+  }
+
+  @include media(767px, max-width) {
+    display: none;
+  }
+}
