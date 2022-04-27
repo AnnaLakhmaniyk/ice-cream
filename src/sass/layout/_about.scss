@@ -52,6 +52,7 @@
   @include media(1280px) {
     font-size: 58px;
     line-height: 66px;
+    margin-top: 55px;
   }
 }
 
@@ -66,14 +67,14 @@
 
   @include media(1280px) {
     width: 476px;
-    margin-top: 102px;
+    padding-top: 50px;
     margin-left: 62px;
   }
 }
 
 .about__img {
-  width: 280px;
-  height: 279px;
+  width: 100%;
+  height: auto;
   margin-bottom: 46px;
   @include media(768px) {
     margin-top: 50px;
@@ -85,7 +86,6 @@
   @include media(1280px) {
     width: 516px;
     height: 516px;
-    margin-top: 55px;
   }
 }
 
