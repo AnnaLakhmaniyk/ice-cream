@@ -8,7 +8,6 @@
 
 .about__pre-title {
   margin-bottom: 15px;
-
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -16,12 +15,12 @@
   color: $heroCircleColor;
 
   margin-bottom: 15px;
-  padding-top: 125px;
 
   @include media(768px) {
     font-size: 26px;
     line-height: 30px;
-    padding-top: 130px;
+  }
+  @include media(768px) {
   }
 }
 
@@ -53,6 +52,7 @@
   @include media(1280px) {
     font-size: 58px;
     line-height: 66px;
+    margin-top: 55px;
   }
 }
 
@@ -67,19 +67,20 @@
 
   @include media(1280px) {
     width: 476px;
-
+    padding-top: 50px;
     margin-left: 62px;
   }
 }
 
 .about__img {
-  width: 280px;
-  height: 279px;
-
+  width: 100%;
+  height: auto;
+  margin-bottom: 46px;
   @include media(768px) {
     margin-top: 50px;
     width: 340px;
     height: 339px;
+    margin-bottom: 0px;
   }
 
   @include media(1280px) {
@@ -107,6 +108,13 @@
   }
 }
 
+.about__svg {
+  width: 5px;
+  height: 8px;
+  margin-left: 14px;
+  stroke: currentColor;
+}
+
 .about__subdescription {
   font-weight: 500;
   font-size: 12px;
@@ -132,8 +140,9 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
   color: $secondaryTextColor;
+
   // content: "";
   // background: url(../../src/images/About.cow.png);
 
@@ -165,7 +174,4 @@
   justify-content: center;
   background: $primaryBgColor;
   color: $accentColor;
-
-  margin-left: auto;
-  margin-right: auto;
 }
