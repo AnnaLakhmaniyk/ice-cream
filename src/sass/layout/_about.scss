@@ -1,22 +1,36 @@
 .about {
   background-color: $secondaryBgColor;
   padding-top: 125px;
-  background-image: url(..//..//src/images/section.milk.mob.png);
-
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
+  @include media(767px, max-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: url(..//..//src/images/section.milk.mob1x.png);
+    background-repeat: no-repeat;
+    background-position: 0 700px;
+    background-size: contain;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(..//..//src/images/section.milk.mob2x.png);
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(..//..//src/images/section.milk.mob3x.png);
+    }
+  }
 
   @include media(768px) {
     padding-top: 130px;
-    background-image: none;
   }
   @include media(1280px) {
-    background-image: url(..//..//src/images/section.milk.png);
+    background-image: url(..//..//src/images/section.milk1x.png);
 
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(..//..//src/images/section.milk2x.png);
+    }
+    @media (min-device-pixel-ratio: 3), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(..//..//src/images/section.milk3x.png);
+    }
   }
 }
 
