@@ -1,0 +1,261 @@
+.hero {
+  min-height: 502px;
+  padding-top: 193px;
+
+  background: radial-gradient(
+    22.5em 22.5em at 67% 52%,
+    $heroCircleColor 50%,
+    transparent 50%,
+    $heroBgColor 50%
+  );
+
+  @include media(768px) {
+    padding-top: 102px;
+    min-height: 399px;
+    background: radial-gradient(
+      20em 20em at 59% 48%,
+      $heroCircleColor 50%,
+      transparent 50%,
+      $heroBgColor 50%
+    );
+  }
+
+  @include media(1280px) {
+    padding-top: 171px;
+    min-height: 665px;
+    background: radial-gradient(
+      33.5em 33.5em at 57% 48%,
+      $heroCircleColor 50%,
+      transparent 50%,
+      $heroBgColor 50%
+    );
+  }
+
+  &__container {
+    position: relative;
+
+    display: flex;
+    // justify-content: space-between;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    @include media(479px, max-width) {
+      width: 100%;
+    }
+    @include media(480px) {
+      width: 480px;
+    }
+    @include media(768px) {
+      width: 740px;
+    }
+    @include media(1280px) {
+      width: 1090px;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__tittle {
+    margin-bottom: 20px;
+    font-family: 'Titan One';
+    @include font(400, 26px, 1.15, 0.04em, uppercase);
+    color: $lightTextColor;
+
+    @include media(768px) {
+      font-size: 22px;
+    }
+
+    @include media(1280px) {
+      font-size: 38px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__tittle-big-text {
+    font-size: 46px;
+    line-height: 0.8;
+    color: $accentColor;
+
+    @include media(768px) {
+      font-size: 34px;
+    }
+
+    @include media(1280px) {
+      font-size: 58px;
+    }
+  }
+
+  &__list-link {
+    display: flex;
+
+    @include media(768px) {
+      margin-bottom: 66px;
+    }
+
+    @include media(1280px) {
+      margin-bottom: 112px;
+    }
+  }
+
+  &__item-link + &__item-link {
+    margin-left: 8px;
+  }
+
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+
+    padding: 8px;
+    border-radius: 22px;
+    @include font(400, 8px, 1.25, null, null);
+
+    @include media(1280px) {
+      padding: 13px 20px;
+      font-size: 14px;
+    }
+
+    &--primary {
+      color: $accentColor;
+      background-color: $primaryBgColor;
+      min-width: 82px;
+
+      &:hover,
+      &:focus {
+        background-color: $btnPrimaryHoverColor;
+      }
+    }
+
+    &--accent {
+      background-color: $accentColor;
+      color: $lightTextColor;
+      min-width: 62px;
+
+      &:hover,
+      &:focus {
+        background-color: $btnAccentHoverColor;
+      }
+    }
+  }
+
+  &__achievements-list {
+    margin-left: auto;
+
+    @include media(767px, max-width) {
+      display: none;
+    }
+  }
+
+  &__img-milk {
+    position: absolute;
+    left: 34px;
+    bottom: -2px;
+
+    @include media(767px, max-width) {
+      display: none;
+    }
+
+    @include media(1280px) {
+      left: -14px;
+      bottom: -5px;
+    }
+  }
+
+  &__img-ice-cream {
+    position: absolute;
+    bottom: -158px;
+    right: 31px;
+
+    @include media(768px) {
+      bottom: -27px;
+      right: 247px;
+    }
+
+    @include media(1280px) {
+      bottom: -48px;
+      right: 355px;
+    }
+  }
+
+  &__img-girl {
+    position: absolute;
+    right: 34px;
+    bottom: -27px;
+
+    @include media(767px, max-width) {
+      display: none;
+    }
+
+    @include media(1280px) {
+      right: 14px;
+      bottom: -48px;
+    }
+  }
+
+  &__achievements-wrap {
+    font-family: 'Titan One';
+    @include font(400, 28px, 1.14, 0.04em, uppercase);
+    color: $accentColor;
+    text-align: end;
+
+    @include media(1280px) {
+      font-size: 46px;
+    }
+  }
+
+  &__achievements-text {
+    @include font(400, 8px, 1.25, null, null);
+    text-align: end;
+    color: $lightTextColor;
+
+    @include media(1280px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.hero-description {
+  width: 114px;
+  margin-left: 134px;
+
+  @include media(1280px) {
+    width: 200px;
+    margin-left: 200px;
+  }
+
+  &__link {
+    @include centeredFlex;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $primaryBgColor;
+
+    @include media(1280px) {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 7px;
+    @include font(400, 8px, 1.5, null, null);
+    color: $lightTextColor;
+
+    @include media(1280px) {
+      font-size: 14px;
+      line-height: 1.4;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__icon {
+    display: block;
+  }
+
+  @include media(767px, max-width) {
+    display: none;
+  }
+}
