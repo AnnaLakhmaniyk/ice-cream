@@ -1,32 +1,68 @@
 .contacts {
-  padding-left: 50px;
-  padding-right: 50px;
+  // padding-right: 30px;
+  // padding-left: 30px;
   padding-bottom: 113px;
   padding-top: 86px;
 
   background-image: linear-gradient(to bottom, #ffffff 10.5%, #fff5f6 10.5%, #fff5f6);
+  @include media(768px) {
+    padding-bottom: 158px;
+    padding-top: 119px;
+    background-image: linear-gradient(to bottom, #ffffff 20.8%, #fff5f6 20.8%, #fff5f6);
+  }
+  @include media(1280px) {
+    padding-bottom: 165px;
+    padding-top: 132px;
+    background-image: url(..//..//src/images/contact.b-i.png),
+      linear-gradient(to bottom, #ffffff 23.4%, #fff5f6 23.4%, #fff5f6);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
 }
 .contacts__list {
   margin: 0 auto;
 }
 .contacts__list {
   margin-bottom: 54px;
+  @include media(768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-bottom: 81px;
+  }
+  @include media(1280px) {
+    margin-left: -31px;
+    margin-bottom: 86px;
+  }
 }
 .contacts__item {
-  width: 220px;
+  width: 100%;
   min-height: 427px;
   background-color: $lightTextColor;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 43px 20px;
   margin: 0 auto;
+  @include media(768px) {
+    flex-basis: calc(100% / 3 - 20px);
+    margin-left: 20px;
+    padding: 50px 32px 50px 31px;
+  }
+  @include media(1280px) {
+    flex-basis: calc(100% / 3 - 31px);
+    margin-left: 31px;
+    padding: 51px 44px 62px 43px;
+  }
 }
 .contacts__item:not(:last-child) {
   margin-bottom: 20px;
+  @include media(768px) {
+    margin-bottom: 0;
+  }
 }
 .contacts__item-wrap {
   display: flex;
-  margin-bottom: 25px;
   height: 16px;
   width: 80px;
   align-items: center;
@@ -34,6 +70,17 @@
   padding-right: 24px;
   background-color: $coffeeBgColor;
   border-radius: 4px;
+  margin-bottom: 25px;
+  @include media(768px) {
+    height: 28px;
+    width: 73px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+  }
+  @include media(1280px) {
+    margin-bottom: 32px;
+  }
 }
 .contacts__item-desc {
   font-weight: 500;
@@ -42,10 +89,16 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $lightTextColor;
+  @include media(768px) {
+    font-size: 16px;
+  }
 }
 .contacts__item-wrap.food {
   background: $milkshakeBgColor;
   width: 130px;
+  @include media(768px) {
+    width: 138px;
+  }
 }
 .contacts__item-city {
   font-weight: 500;
@@ -53,6 +106,9 @@
   line-height: 1.83;
   letter-spacing: 0.04em;
   color: $primaryTextColor;
+  @include media(768px) {
+    font-size: 14px;
+  }
 }
 .contacts__item-text {
   font-weight: 500;
@@ -60,11 +116,24 @@
   line-height: 1.5;
   color: $secondaryTextColor;
   margin-top: 10px;
+  @include media(768px) {
+    font-size: 14px;
+    margin-top: 14px;
+  }
+  @include media(1280px) {
+    margin-top: 10px;
+  }
 }
 
 .contacts-wrap {
   margin-bottom: 50px;
   position: relative;
+  @include media(768px) {
+    margin-bottom: 60px;
+  }
+  @include media(1280px) {
+    margin-bottom: 64px;
+  }
 }
 
 .contacts-wrap span {
@@ -72,6 +141,12 @@
   width: 100%;
   border-bottom: 1px solid $customersLinesColor;
   bottom: -25px;
+  @include media(768px) {
+    bottom: -30px;
+  }
+  @include media(1280px) {
+    bottom: -32px;
+  }
 }
 
 .contacts__item-day {
@@ -79,15 +154,27 @@
   font-size: 12px;
   line-height: 1.83;
   color: $primaryTextColor;
+  @include media(768px) {
+    font-size: 14px;
+  }
 }
 .contacts__item-time {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
   color: $preTitleTextColor;
+  @include media(768px) {
+    font-size: 14px;
+  }
 }
 .contacts-wrap__time.upper {
   margin-bottom: 10px;
+  @include media(768px) {
+    margin-bottom: 16px;
+  }
+  @include media(1280px) {
+    margin-bottom: 15px;
+  }
 }
 
 .contacts__item-link {
@@ -96,7 +183,10 @@
   font-size: 12px;
   line-height: 1.5;
   color: $secondaryTextColor;
-  margin: 0;
+  @include media(768px) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
 }
 
 .contacts-btn-wrap {
@@ -105,15 +195,32 @@
   flex-direction: column;
   justify-content: center;
   width: 161px;
+  @include media(768px) {
+    flex-direction: row;
+    width: 100%;
+  }
 }
 .contacts-btn__location {
   margin-bottom: 10px;
+  @include media(768px) {
+    margin-right: 15px;
+    margin-bottom: 0;
+    width: 198px;
+  }
+}
+.contacts-btn__franchise {
+  @include media(768px) {
+    width: 180px;
+  }
 }
 .contacts-btn__location-icon {
   stroke: #ffffff;
   margin-left: 8px;
   justify-content: center;
   align-items: center;
+  @include media(768px) {
+    margin-left: 13px;
+  }
 }
 .contacts-btn__franchise-icon {
   stroke: #d41443;
