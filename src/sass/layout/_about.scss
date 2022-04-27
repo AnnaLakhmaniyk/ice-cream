@@ -1,0 +1,171 @@
+.about {
+  background-color: $secondaryBgColor;
+  padding-top: 125px;
+  @include media(768px) {
+    padding-top: 130px;
+  }
+}
+
+.about__pre-title {
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: $heroCircleColor;
+
+  margin-bottom: 15px;
+  padding-top: 125px;
+
+  @include media(768px) {
+    font-size: 26px;
+    line-height: 30px;
+    padding-top: 130px;
+  }
+}
+
+.about__title {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accentColor;
+
+  @include media(768px) {
+    font-size: 48px;
+    line-height: 55px;
+  }
+
+  @include media(1200px) {
+    font-size: 58px;
+    line-height: 66px;
+  }
+}
+
+.about__box {
+  @include media(768px) {
+    display: flex;
+  }
+
+  @include media(1280px) {
+    font-size: 58px;
+    line-height: 66px;
+  }
+}
+
+.about__box-wrap {
+  width: 100%;
+
+  @include media(768px) {
+    width: 340px;
+    margin-left: 20px;
+    margin-top: 100px;
+  }
+
+  @include media(1280px) {
+    width: 476px;
+
+    margin-left: 62px;
+  }
+}
+
+.about__img {
+  width: 280px;
+  height: 279px;
+
+  @include media(768px) {
+    margin-top: 50px;
+    width: 340px;
+    height: 339px;
+  }
+
+  @include media(1280px) {
+    width: 516px;
+    height: 516px;
+  }
+}
+
+.about__subtitle {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: $primaryTextColor;
+
+  margin-bottom: 35px;
+
+  @include media(768px) {
+    font-size: 14px;
+    line-height: 176%;
+  }
+
+  @include media(1280px) {
+    font-size: 16px;
+    line-height: 176%;
+  }
+}
+
+.about__subdescription {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  margin-bottom: 10px;
+  color: $secondaryTextColor;
+
+  @include media(768px) {
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+  }
+
+  @include media(1280px) {
+    font-size: 14px;
+    line-height: 194%;
+    letter-spacing: 0.04em;
+    margin-bottom: 27px;
+  }
+}
+
+.about__subdescription-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  margin-bottom: 25px;
+  color: $secondaryTextColor;
+  // content: "";
+  // background: url(../../src/images/About.cow.png);
+
+  @include media(768px) {
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    margin-bottom: 65px;
+  }
+
+  @include media(1280px) {
+    font-size: 14px;
+    line-height: 194%;
+    letter-spacing: 0.04em;
+    margin-bottom: 45px;
+  }
+}
+
+.about__button {
+  font-family: 'DM Sans';
+  width: 176px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $primaryBgColor;
+  color: $accentColor;
+
+  margin-left: auto;
+  margin-right: auto;
+}
