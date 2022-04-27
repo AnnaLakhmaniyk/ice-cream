@@ -138,6 +138,9 @@
     left: 24px;
     bottom: 28px;
 
+    // animation-name: hero-milk;
+    // animation-duration: 2s;
+
     @include media(767px, max-width) {
       display: none;
     }
@@ -147,6 +150,14 @@
       bottom: 45px;
     }
   }
+  // @keyframes hero-milk {
+  //   0% {
+  //     right: 0;
+  //   }
+  //   100% {
+  //     right: 400px;
+  //   }
+  // }
 
   &__img-ice-cream {
     position: absolute;
@@ -264,7 +275,7 @@
 
     &:hover,
     &:focus {
-      background-color: $btnAccentHoverColor;
+      background-color: $btnPrimaryHoverColor;
     }
   }
 
@@ -282,6 +293,11 @@
 
   &__icon {
     display: block;
+
+    @include media(1280px) {
+      width: 8px;
+      height: 8px;
+    }
   }
 
   @include media(767px, max-width) {

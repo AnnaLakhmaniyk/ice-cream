@@ -3,12 +3,12 @@
 }
 
 .page-header__wrap {
-  width: 100%;
+  width: calc(100% - (20px * 2));
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  z-index: 1;
+  z-index: 20;
 
   padding-top: 6px;
 
@@ -26,6 +26,11 @@
 
   &__item {
     margin-right: 15px;
+  }
+
+  @include media(1280px) {
+    position: relative;
+    left: -5px;
   }
 }
 
@@ -62,7 +67,7 @@
 }
 
 .mob-menu-open {
-  padding: 15px;
+  padding: 8px;
   @include media(1280px) {
     display: none;
   }
