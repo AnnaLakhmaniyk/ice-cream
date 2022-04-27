@@ -276,10 +276,10 @@
   justify-content: center;
   align-items: center;
 
-  background-color: #ffb8ca;
+  background-color: $heroBgColor;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    background-color: #d41443;
+    background-color: $accentColor;
   }
 }
