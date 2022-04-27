@@ -1,27 +1,13 @@
 .hero {
-  background: radial-gradient(
-    22.5em 22.5em at 67% 52%,
-    $heroCircleColor 50%,
-    transparent 50%,
-    $heroBgColor 50%
-  );
+  background-color: $heroBgColor;
 
-  @include media(768px) {
+  @include media(767px, max-width) {
     background: radial-gradient(
-      20em 20em at 59% 48%,
+      22.5em 22.5em at 67% 52%,
       $heroCircleColor 50%,
       transparent 50%,
       $heroBgColor 50%
     );
-
-    @include media(1280px) {
-      background: radial-gradient(
-        33.5em 33.5em at 59% 48%,
-        $heroCircleColor 50%,
-        transparent 50%,
-        $heroBgColor 50%
-      );
-    }
   }
 
   &__container {
@@ -33,11 +19,24 @@
     @include media(768px) {
       padding-top: 102px;
       min-height: 399px;
+
+      background: radial-gradient(
+        20em 20em at 59% 48%,
+        $heroCircleColor 50%,
+        transparent 50%,
+        $heroBgColor 50%
+      );
     }
 
     @include media(1280px) {
       padding-top: 171px;
       min-height: 665px;
+      background: radial-gradient(
+        33.5em 33.5em at 59% 48%,
+        $heroCircleColor 50%,
+        transparent 50%,
+        $heroBgColor 50%
+      );
     }
   }
 
