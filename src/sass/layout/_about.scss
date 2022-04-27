@@ -9,29 +9,41 @@
 .about__pre-title {
   margin-bottom: 15px;
 
-  //   @include media(768px) {
-  //     font-size: 26px;
-  //     line-height: 30px;
-  //   }
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: $heroCircleColor;
 
-  //   @include media(1280px) {
-  //     font-size: 30px;
-  //     line-height: 34px;
-  //   }
+  margin-bottom: 15px;
+  padding-top: 125px;
+
+  @include media(768px) {
+    font-size: 26px;
+    line-height: 30px;
+    padding-top: 130px;
+  }
 }
 
-// .about__title {
+.about__title {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accentColor;
 
-//   @include media(768px) {
-//     font-size: 48px;
-//     line-height: 55px;
-//   }
+  @include media(768px) {
+    font-size: 48px;
+    line-height: 55px;
+  }
 
-//   @include media(1280px) {
-//     font-size: 58px;
-//     line-height: 66px;
-//   }
-// }
+  @include media(1200px) {
+    font-size: 58px;
+    line-height: 66px;
+  }
+}
 
 .about__box {
   @include media(768px) {
