@@ -262,8 +262,8 @@
       height: 26px;
     }
 
-    &::hover,
-    &::focus {
+    &:hover,
+    &:focus {
       background-color: $btnAccentHoverColor;
     }
   }
