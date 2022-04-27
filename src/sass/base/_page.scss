@@ -5,6 +5,8 @@
   line-height: 1.76;
 }
 
-// .page.menu-open {
-//   overflow: hidden;
-// }
+.page.modal-open,
+.page.menu-open,
+.page.map-open {
+  overflow: hidden;
+}
