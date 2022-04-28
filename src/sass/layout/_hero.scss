@@ -8,6 +8,36 @@
       transparent 50%,
       $heroBgColor 50%
     );
+    // animation-name: circul;
+    // animation-duration: 3s;
+    // animation-timing-function: ease;
+
+    // @keyframes circul {
+    //   0% {
+    //     background: radial-gradient(
+    //       1em 1em at 67% 52%,
+    //       $heroCircleColor 50%,
+    //       transparent 50%,
+    //       $heroBgColor 50%
+    //     );
+    //   }
+    //   50% {
+    //     background: radial-gradient(
+    //       30em 30em at 67% 52%,
+    //       $heroCircleColor 50%,
+    //       transparent 50%,
+    //       $heroBgColor 50%
+    //     );
+    //   }
+    //   100% {
+    //     background: radial-gradient(
+    //       22.5em 22.5em at 67% 52%,
+    //       $heroCircleColor 50%,
+    //       transparent 50%,
+    //       $heroBgColor 50%
+    //     );
+    //   }
+    // }
   }
 
   &__container {
@@ -31,6 +61,7 @@
     @include media(1280px) {
       padding-top: 171px;
       min-height: 665px;
+
       background: radial-gradient(
         33.5em 33.5em at 59% 48%,
         $heroCircleColor 50%,
