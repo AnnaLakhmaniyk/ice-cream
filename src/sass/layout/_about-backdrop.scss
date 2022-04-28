@@ -32,14 +32,15 @@
     border-radius: 4px;
     
     @include media(768px) {
-        overflow: hidden;
         width: 700px;
-        height: 778px;
-        padding: 100px 65px;
+        height: 780px;
+        max-height: 90%;
+        padding: 85px 65px;
     }
     @include media(1280px) {
         width: 1048px;
         height: 619px;
+        max-height: 90%;
     }
     }
 
