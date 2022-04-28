@@ -25,6 +25,10 @@
 }
 .contacts__list {
   margin-bottom: 54px;
+  @include media(767px, max-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   @include media(768px) {
     display: flex;
     flex-wrap: wrap;
