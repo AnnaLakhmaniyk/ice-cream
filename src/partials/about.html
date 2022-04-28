@@ -3,7 +3,32 @@
     <p class="about__pre-title pre-title">tradition and love</p>
     <h2 id="howmade" class="about__title title">how it’s made?</h2>
     <div class="about__box">
-      <img class="about__img" src="../src/images/About.cow.png" alt="cow" />
+      <picture>
+        <source
+          srcset="
+            ../src/images/about.dc1x.png 1x,
+            ../src/images/about.dc2x.png 2x,
+            ../src/images/about.dc3x.png 3x
+          "
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+            ../src/images/about.tab1x.png 1x,
+            ../src/images/about.tab2x.png 2x,
+            ../src/images/about.tab3x.png 3x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ../src/images/about.mob1x.png 1x,
+            ../src/images/about.mob2x.png 2x,
+            ../src/images/about.mob3x.png 3x
+          "
+        />
+        <img class="about__img" src=" ../src/images/about.mob1x.png" alt="cow" />
+      </picture>
       <div class="about__box-wrap">
         <p class="about__subtitle">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
