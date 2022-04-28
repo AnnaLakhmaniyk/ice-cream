@@ -2,11 +2,9 @@
   background-color: $secondaryBgColor;
   padding-top: 125px;
   @include media(767px, max-width) {
-    padding-left: 30px;
-    padding-right: 30px;
     background-image: url(..//..//src/images/section.milk.mob1x.png);
     background-repeat: no-repeat;
-    background-position: 0 700px;
+    background-position: 0 766px;
     background-size: contain;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(..//..//src/images/section.milk.mob2x.png);
@@ -89,6 +87,10 @@
 
 .about__box-wrap {
   width: 100%;
+  @include media(767px, max-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
   @include media(768px) {
     width: 340px;
