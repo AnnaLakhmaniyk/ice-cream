@@ -6,6 +6,15 @@
       <picture>
         <source
           srcset="
+            ../src/images/about.dc1x.webp 1x,
+            ../src/images/about.dc2x.webp 2x,
+            ../src/images/about.dc3x.webp 3x
+          "
+          type="image/webp"
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
             ../src/images/about.dc1x.png 1x,
             ../src/images/about.dc2x.png 2x,
             ../src/images/about.dc3x.png 3x
@@ -14,11 +23,28 @@
         />
         <source
           srcset="
+            ../src/images/about.tab1x.webp 1x,
+            ../src/images/about.tab2x.webp 2x,
+            ../src/images/about.tab3x.webp 3x
+          "
+          type="image/webp"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
             ../src/images/about.tab1x.png 1x,
             ../src/images/about.tab2x.png 2x,
             ../src/images/about.tab3x.png 3x
           "
           media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ../src/images/about.mob1x.webp 1x,
+            ../src/images/about.mob2x.webp 2x,
+            ../src/images/about.mob3x.webp 3x
+          "
+          type="image/webp"
         />
         <source
           srcset="
@@ -53,27 +79,31 @@
   <!-- модальне вікно -->
   <div class="backdrop__about is-hidden" data-about>
     <div class="backdrop__modal">
-    <button class="about__btn" type="button" data-about-close>
-      <svg class="about__btn-icon" width="14" height="14">
-        <use href="../src/images/sprite.svg#close"></use>
-      </svg>
-    </button>
-    <p class="backdrop__article">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
-    Maecenas eleifend erat at justo fringilla.</p>
-    <div class="backdrop__text">
-      Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
-      Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-      <p class="backdrop__margin">Aliquam erat volutpat. Aenean accumsan.</p>
-      Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
-      Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt. Curabitur lacinia
-      enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
-      suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt. Curabitur lacinia enim at ex blandit, vel
-      pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula
-      volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt. Curabitur lacinia enim at ex blandit, vel pellentesque
-      odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
-      urna maximus. Cras massa nibh, tincidunt.
-
+      <button class="about__btn" type="button" data-about-close>
+        <svg class="about__btn-icon" width="14" height="14">
+          <use href="../src/images/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <p class="backdrop__article">
+        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+        lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+      </p>
+      <div class="backdrop__text">
+        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+        in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+        maximus. Cras massa nibh, tincidunt.
+        <p class="backdrop__margin">Aliquam erat volutpat. Aenean accumsan.</p>
+        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+        in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+        maximus. Cras massa nibh, tincidunt. Curabitur lacinia enim at ex blandit, vel pellentesque
+        odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit
+        ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt. Curabitur lacinia enim
+        at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
+        Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+        tincidunt. Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris
+        rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a
+        feugiat urna maximus. Cras massa nibh, tincidunt.
+      </div>
     </div>
-  </div>
   </div>
 </section>
