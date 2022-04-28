@@ -3,6 +3,10 @@
     openModalBtn: document.querySelector('[data-modal-open]'),
     openModalBtn2: document.querySelector('[data-modal-open2]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
+    closeAnchor1: document.querySelector('[anchor-about]'),
+    closeAnchor2: document.querySelector('[anchor-howmade]'),
+    closeAnchor3: document.querySelector('[anchor-ourproducts]'),
+    closeAnchor4: document.querySelector('[anchor-contact]'),
 
     modal: document.querySelector('[data-modal]'),
     modalClo: document.querySelector('[data-modal-close2]'),
@@ -12,6 +16,10 @@
   refs.openModalBtn2.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
   refs.openModalBtn2.addEventListener('click', toggleModal2);
+  refs.closeAnchor1.addEventListener('click', toggleModal3);
+  refs.closeAnchor2.addEventListener('click', toggleModal3);
+  refs.closeAnchor3.addEventListener('click', toggleModal3);
+  refs.closeAnchor4.addEventListener('click', toggleModal3);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
@@ -19,5 +27,9 @@
   }
   function toggleModal2() {
     refs.modalClo.classList.toggle('is-open');
+  }
+  function toggleModal3() {
+    refs.modalClo.classList.toggle('is-open');
+     document.body.classList.toggle('menu-open');
   }
 })();
