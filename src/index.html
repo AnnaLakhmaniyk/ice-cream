@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Eco ice-cream for all family" />
     <title>IceCream</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -79,28 +80,29 @@
         },
       });
     </script>
+
     <!-- Initialize Scroll -->
- <script type="text/javascript">
-  $(document).ready(function () {
-    $("#scroll-menu").on("click", "a[href^='#']", function (event){
-      event.preventDefault();
-      var id = $(this).attr('href'),
-        top = $(id).offset().top;
-      $('body,html').animate({ scrollTop: top }, 1500);
-    });
-    $("#scroll-menu2").on("click", "a[href^='#']", function (event) {
-      event.preventDefault();
-      var id = $(this).attr('href'),
-        top = $(id).offset().top;
-      $('body,html').animate({ scrollTop: top }, 1500);
-    });
-    $("#scroll-menu3").on("click", "a", function (event) {
-      event.preventDefault();
-      var id = $(this).attr('href'),
-        top = $(id).offset().top;
-      $('body,html').animate({ scrollTop: top }, 1500);
-    });
-  });
-</script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#scroll-menu').on('click', "a[href^='#']", function (event) {
+          event.preventDefault();
+          var id = $(this).attr('href'),
+            top = $(id).offset().top;
+          $('body,html').animate({ scrollTop: top }, 1500);
+        });
+        $('#scroll-menu2').on('click', "a[href^='#']", function (event) {
+          event.preventDefault();
+          var id = $(this).attr('href'),
+            top = $(id).offset().top;
+          $('body,html').animate({ scrollTop: top }, 1500);
+        });
+        $('#scroll-menu3').on('click', 'a', function (event) {
+          event.preventDefault();
+          var id = $(this).attr('href'),
+            top = $(id).offset().top;
+          $('body,html').animate({ scrollTop: top }, 1500);
+        });
+      });
+    </script>
   </body>
 </html>
