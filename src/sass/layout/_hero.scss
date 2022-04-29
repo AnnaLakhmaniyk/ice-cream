@@ -9,36 +9,6 @@
       transparent 50%,
       $heroBgColor 50%
     );
-    // animation-name: circul;
-    // animation-duration: 3s;
-    // animation-timing-function: ease;
-
-    // @keyframes circul {
-    //   0% {
-    //     background: radial-gradient(
-    //       1em 1em at 67% 52%,
-    //       $heroCircleColor 50%,
-    //       transparent 50%,
-    //       $heroBgColor 50%
-    //     );
-    //   }
-    //   50% {
-    //     background: radial-gradient(
-    //       30em 30em at 67% 52%,
-    //       $heroCircleColor 50%,
-    //       transparent 50%,
-    //       $heroBgColor 50%
-    //     );
-    //   }
-    //   100% {
-    //     background: radial-gradient(
-    //       22.5em 22.5em at 67% 52%,
-    //       $heroCircleColor 50%,
-    //       transparent 50%,
-    //       $heroBgColor 50%
-    //     );
-    //   }
-    // }
   }
 
   &__container {
@@ -145,7 +115,7 @@
       background-color: $primaryBgColor;
       min-width: 82px;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+      overflow: hidden;
       &:hover,
       &:focus {
         background-color: $btnPrimaryHoverColor;
@@ -170,9 +140,6 @@
     left: 24px;
     bottom: 28px;
 
-    // animation-name: hero-milk;
-    // animation-duration: 2s;
-
     @include media(767px, max-width) {
       display: none;
     }
@@ -182,14 +149,6 @@
       bottom: 45px;
     }
   }
-  // @keyframes hero-milk {
-  //   0% {
-  //     right: 0;
-  //   }
-  //   100% {
-  //     right: 400px;
-  //   }
-  // }
 
   &__img-ice-cream {
     position: absolute;

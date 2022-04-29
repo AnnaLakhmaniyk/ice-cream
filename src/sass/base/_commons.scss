@@ -79,3 +79,61 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.btn-primary-flicker {
+  position: relative;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -180px;
+    width: 70px;
+    height: 100%;
+    background-color: $heroCircleColor;
+    filter: blur(20px);
+    transform: skewX(-30deg);
+  }
+
+  &:hover::before,
+  :focus::before {
+    left: calc(100% + 150px);
+    transition: 1s;
+  }
+  &:hover::after,
+  :focus::after {
+    left: calc(100% + 150px);
+    transition: 1s 0.5s;
+  }
+}
+
+.btn-accent-flicker {
+  position: relative;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -180px;
+    width: 70px;
+    height: 100%;
+    background-color: #fff;
+    filter: blur(20px);
+    transform: skewX(-30deg);
+  }
+
+  &:hover::before,
+  :focus::before {
+    left: calc(100% + 150px);
+    transition: 1s;
+  }
+  &:hover::after,
+  :focus::after {
+    left: calc(100% + 150px);
+    transition: 1s 0.5s;
+  }
+}
