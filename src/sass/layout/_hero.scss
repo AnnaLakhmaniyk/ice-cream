@@ -1,5 +1,6 @@
 .hero {
   background-color: $heroBgColor;
+  overflow: hidden;
 
   @include media(767px, max-width) {
     background: radial-gradient(
