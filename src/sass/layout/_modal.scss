@@ -1,18 +1,16 @@
 .backdrop-buynow {
   position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(144, 126, 130, 0.6);
+  @include centeredFlex;
+  z-index: 10;
+
+  background-color: rgba(144, 126, 130, 0.6);
   overflow-y: scroll;
 
-  transition: opacity 250ms cubic-bezier(0.07, 0.96, 0.54, 0.88);
+  transition: opacity 2500ms cubic-bezier(0.07, 0.96, 0.54, 0.88);
 
   &.is-hidden {
     opacity: 0;
@@ -25,6 +23,7 @@
   max-width: 320px;
   min-height: 420px;
   padding: 15px;
+
   background-color: $primaryBgColor;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -38,9 +37,11 @@
     display: block;
     margin-left: auto;
     padding: 5px;
+    margin-bottom: 25px;
+
     background-color: $heroBgColor;
     border-radius: 50%;
-    margin-bottom: 25px;
+
     transition: background-color 250ms cubic-bezier(0.07, 0.96, 0.54, 0.88);
 
     &:hover,
@@ -54,11 +55,12 @@
   }
 
   &__tittle {
+    margin-bottom: 50px;
+
     font-family: 'Titan One';
     @include font(null, 20px, 1.13, 0.06em, uppercase);
     text-align: center;
     color: $accentColor;
-    margin-bottom: 50px;
   }
 
   &__wrap {
@@ -73,9 +75,11 @@
 
     @include font(500, 12px, 1.33, 0.04em, null);
     font-family: 'DM Sans';
+
     border-radius: 22px;
     border: 1px solid $heroBgColor;
     outline: $accentColor;
+
     transition: border-color 250ms cubic-bezier(0.07, 0.96, 0.54, 0.88);
 
     &:hover,
@@ -86,13 +90,13 @@
 
   &__label {
     position: absolute;
-
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
 
     @include font(500, 12px, 1.33, 0.04em, null);
     color: $heroBgColor;
+
     transition: transform 250ms cubic-bezier(0.07, 0.96, 0.54, 0.88);
   }
 
@@ -103,6 +107,7 @@
     width: 100%;
     max-width: 220px;
     margin-top: 65px;
+
     @include font(700, 16px, 1.31, 0.04em, null);
 
     &:hover,

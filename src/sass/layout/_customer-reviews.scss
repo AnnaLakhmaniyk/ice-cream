@@ -1,5 +1,6 @@
 .reviews {
   padding-top: 80px;
+
   @include media(768px) {
     padding-top: 121px;
   }
@@ -12,6 +13,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 29px;
+
   @include media(768px) {
     margin-bottom: 19px;
   }
@@ -23,6 +25,7 @@
 .reviews__item-wrap-text {
   padding: 43px 66px 26px 57px;
   background-color: #fafafa;
+
   @include media(768px) {
     padding: 30px 36px 28px 40px;
     margin: 0 auto;
@@ -39,20 +42,22 @@
 }
 
 .reviews__item::before {
-  content: '';
-  display: flex;
-  background-image: url(..//..//src/images/reviews“.svg);
-  background-position: center;
-  width: 54px;
-  height: 40px;
-  background-size: contain;
-  background-repeat: no-repeat;
   position: absolute;
   left: 40px;
   top: 145px;
-  z-index: 1;
-
+  display: flex;
   margin-bottom: 54px;
+  z-index: 1;
+  content: '';
+
+  width: 54px;
+  height: 40px;
+
+  background-image: url(..//..//src/images/reviews“.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
   @include media(768px) {
     left: 100px;
     top: 118px;
@@ -63,19 +68,27 @@
 }
 
 .reviews__item-text {
+  position: relative;
+  z-index: 2;
+
   font-weight: 500;
   font-size: 12px;
   line-height: 2.58;
   text-align: center;
   color: $primaryTextColor;
-  background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 31px);
-  position: relative;
-  z-index: 2;
+
+  background-image: repeating-linear-gradient(
+    to top,
+    $customersLinesColor 0px 1px,
+    transparent 1px 31px
+  );
+
   @include media(768px) {
-    font-size: 14px;
-    line-height: 2.14;
     max-width: 460px;
     margin: 0 auto;
+
+    font-size: 14px;
+    line-height: 2.14;
   }
   @include media(1280px) {
     max-width: 822px;
@@ -83,10 +96,9 @@
 }
 
 .reviews__wrap-span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex;
   margin-top: 30px;
+
   @include media(768px) {
     margin-top: 24px;
   }
@@ -96,20 +108,22 @@
 }
 
 .reviews__wrap-span span {
-  border-radius: 50%;
+  position: relative;
   width: 4px;
   height: 4px;
+
   background-color: $btnAccentHoverColor;
-  position: relative;
+  border-radius: 50%;
 }
 
 .reviews__wrap-span span::before,
 .reviews__wrap-span span::after {
-  content: '';
   position: absolute;
-  border-radius: 50%;
   width: 100%;
   height: 4px;
+
+  content: '';
+  border-radius: 50%;
   background-color: $btnAccentHoverColor;
 }
 
@@ -124,6 +138,7 @@
 .reviews__item-wrap-name {
   margin-top: 18px;
   margin-bottom: 30px;
+
   @include media(768px) {
     margin-top: 14px;
     margin-bottom: 35px;
@@ -139,6 +154,7 @@
   line-height: 1.85;
   text-align: center;
   color: $primaryTextColor;
+
   @include media(768px) {
     font-size: 16px;
   }
@@ -157,12 +173,13 @@
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #fff;
-  background-image: url(..//..//src/images/reviews-home.svg);
   width: 12px;
   height: 13px;
+
+  background-color: $primaryBgColor;
+  background-image: url(..//..//src/images/reviews-home.svg);
   background-position: center;
-  border-radius: 0;
   background-size: contain;
   background-repeat: no-repeat;
+  border-radius: 0;
 }
