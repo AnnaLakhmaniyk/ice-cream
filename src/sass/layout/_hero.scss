@@ -3,7 +3,7 @@
   overflow: hidden;
 
   @include media(767px, max-width) {
-    background: radial-gradient(
+    background-image: radial-gradient(
       22.5em 22.5em at 67% 52%,
       $heroCircleColor 50%,
       transparent 50%,
@@ -21,7 +21,7 @@
       padding-top: 102px;
       min-height: 399px;
 
-      background: radial-gradient(
+      background-image: radial-gradient(
         20em 20em at 59% 48%,
         $heroCircleColor 50%,
         transparent 50%,
@@ -33,7 +33,7 @@
       padding-top: 171px;
       min-height: 665px;
 
-      background: radial-gradient(
+      background-image: radial-gradient(
         33.5em 33.5em at 59% 48%,
         $heroCircleColor 50%,
         transparent 50%,
@@ -49,6 +49,7 @@
 
   &__tittle {
     margin-bottom: 20px;
+
     font-family: 'Titan One';
     @include font(400, 26px, 1.15, 0.04em, uppercase);
     color: $lightTextColor;
@@ -56,10 +57,9 @@
     @include media(768px) {
       font-size: 22px;
     }
-
     @include media(1280px) {
-      font-size: 38px;
       margin-bottom: 25px;
+      font-size: 38px;
     }
   }
 
@@ -71,7 +71,6 @@
     @include media(768px) {
       font-size: 34px;
     }
-
     @include media(1280px) {
       font-size: 58px;
     }
@@ -83,7 +82,6 @@
     @include media(768px) {
       margin-bottom: 66px;
     }
-
     @include media(1280px) {
       margin-bottom: 112px;
     }
@@ -100,8 +98,8 @@
   &__link {
     display: flex;
     justify-content: center;
-
     padding: 8px;
+
     border-radius: 22px;
     @include font(400, 8px, 1.25, null, null);
 
@@ -111,11 +109,14 @@
     }
 
     &--primary {
+      min-width: 82px;
+
       color: $accentColor;
       background-color: $primaryBgColor;
-      min-width: 82px;
+
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       overflow: hidden;
+
       &:hover,
       &:focus {
         background-color: $btnPrimaryHoverColor;
@@ -123,9 +124,11 @@
     }
 
     &--accent {
+      min-width: 62px;
+
       background-color: $accentColor;
       color: $lightTextColor;
-      min-width: 62px;
+
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover,
@@ -143,7 +146,6 @@
     @include media(767px, max-width) {
       display: none;
     }
-
     @include media(1280px) {
       left: -14px;
       bottom: 45px;
@@ -159,7 +161,6 @@
       bottom: 0;
       right: 247px;
     }
-
     @include media(1280px) {
       bottom: 0;
       right: 355px;
@@ -174,7 +175,6 @@
     @include media(767px, max-width) {
       display: none;
     }
-
     @include media(1280px) {
       right: 0;
       bottom: 0;
@@ -215,19 +215,20 @@
     position: absolute;
     top: -3px;
     right: -9px;
-    content: '';
-    display: block;
-    z-index: -1;
     width: 16px;
     height: 16px;
+    display: block;
+    z-index: -1;
+
+    content: '';
     border-radius: 50px;
     background-color: $lightTextColor;
 
     @include media(1280px) {
-      width: 30px;
-      height: 30px;
       top: -6px;
       right: -15px;
+      width: 30px;
+      height: 30px;
     }
   }
 
@@ -255,8 +256,10 @@
     @include centeredFlex;
     width: 18px;
     height: 18px;
+
     border-radius: 50%;
     background-color: $primaryBgColor;
+
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @include media(1280px) {

@@ -20,6 +20,7 @@
   min-width: 234px;
   max-width: 70%;
   margin-bottom: 43px;
+
   @include media(768px) {
     width: 340px;
     max-width: 340px;
@@ -35,8 +36,10 @@
 
 .footer__duplicate-pre-title {
   margin-bottom: 17px;
+
   @include media(768px) {
     margin-bottom: 16px;
+
     letter-spacing: 0.04em;
   }
   @include media(1280px) {
@@ -60,6 +63,7 @@
 .socials {
   display: flex;
   margin-bottom: 46px;
+
   @include media(1280px) {
     margin-bottom: 50px;
   }
@@ -94,7 +98,7 @@
   background-color: $socialIconsBg;
   border-radius: 50%;
 
-  transition: background-color 250ms linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -110,7 +114,6 @@
 }
 
 // telephone
-
 .footer__tel {
   @include font(700, 12px, 1.86, 0.02em, null);
   color: $primaryTextColor;

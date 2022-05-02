@@ -3,13 +3,12 @@
 }
 
 .page-header__wrap {
+  position: absolute;
   width: calc(100% - (20px * 2));
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
   z-index: 5;
-
   padding-top: 6px;
 
   @include media(768px) {
@@ -20,6 +19,7 @@
 .logo {
   display: flex;
   align-items: center;
+
   font-family: 'Titan One';
   @include font(null, 26px, 1.15, 0.03em, uppercase);
   color: $accentColor;
@@ -27,7 +27,6 @@
   &__item {
     margin-right: 15px;
   }
-
   @include media(1280px) {
     position: relative;
     left: -50px;
@@ -68,6 +67,7 @@
 
 .mob-menu-open {
   padding: 8px;
+
   @include media(1280px) {
     display: none;
   }
