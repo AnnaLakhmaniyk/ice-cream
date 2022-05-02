@@ -86,26 +86,24 @@
   position: absolute;
   top: 0;
   bottom: 0;
+  width: 50px;
+  height: 50px;
 }
 
 .advantages___letter.udder::before {
   content: '';
-  background-image: url(..//..//src/images/Advantages3.png);
-  width: 33px;
+  background-image: url(..//..//src/images/advantages-1.svg);
   height: 50px;
+  width: 27px;
 }
 
 .advantages___items.weight::before {
   content: ' ';
-  background-image: url(..//..//src/images/Advantages2.png);
-  width: 50px;
-  height: 50px;
+  background-image: url(..//..//src/images/advantages-2.svg);
 }
 .advantages___items.heart::before {
   content: '';
-  background-image: url(..//..//src/images/Advantages1.png);
-  width: 40px;
-  height: 50px;
+  background-image: url(..//..//src/images/advantages-3.svg);
 }
 
 .advantages___text {
