@@ -90,6 +90,7 @@
       </button>
     </div>
   </div>
+  <!-- modal -->
   <div class="contacts__map is-hidden">
     <div class="contacts__map-wrap">
       <div class="map">
@@ -107,6 +108,55 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+    </div>
+  </div>
+  <!-- modal-franchise -->
+  <div class="franchise is-hidden">
+    <div class="modal-franchise">
+      <button class="modal-franchise__btn" type="button">
+        <svg class="modal-franchise__btn-icon" width="14" height="14">
+          <use href="../src/images/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <p class="modal-franchise__tittle">Leave your contact details and we will get back to you</p>
+      <form class="modal-franchise__form">
+        <div class="modal-franchise__wrap">
+          <input
+            type="text"
+            name="user-name"
+            placeholder=" "
+            id="user-name"
+            class="modal-franchise__input"
+          />
+          <label for="user-name" class="modal-franchise__label">Name</label>
+        </div>
+        <div class="modal-franchise__wrap">
+          <input
+            type="tel"
+            name="user-tel"
+            placeholder=" "
+            id="user-tel"
+            class="modal-franchise__input"
+          />
+          <label for="user-tel" class="modal-franchise__label">Phone</label>
+        </div>
+        <div class="modal-franchise__wrap">
+          <input
+            type="email"
+            name="user-email"
+            placeholder=" "
+            id="user-email"
+            class="modal-franchise__input"
+          />
+          <label for="user-email" class="modal-franchise__label">Email</label>
+        </div>
+        <div class="modal-franchise__wrap">
+          <textarea name="comment" id="comment" class="modal-franchise__comment"></textarea>
+          <label for="comment" class="modal-franchise__label-com">Comment</label>
+        </div>
+
+        <button type="submit" class="button-accent modal-franchise__btn-go">Submit</button>
+      </form>
     </div>
   </div>
 </section>
