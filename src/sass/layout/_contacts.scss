@@ -2,12 +2,22 @@
   padding-bottom: 113px;
   padding-top: 86px;
 
-  background-image: linear-gradient(to bottom, #ffffff 10.5%, #fff5f6 10.5%, #fff5f6);
+  background-image: linear-gradient(
+    to bottom,
+    $primaryBgColor 10.5%,
+    $secondaryBgColor 10.5%,
+    $secondaryBgColor
+  );
   @include media(768px) {
     padding-bottom: 158px;
     padding-top: 119px;
 
-    background-image: linear-gradient(to bottom, #ffffff 20.8%, #fff5f6 20.8%, #fff5f6);
+    background-image: linear-gradient(
+      to bottom,
+      $primaryBgColor 20.8%,
+      $secondaryBgColor 20.8%,
+      $secondaryBgColor
+    );
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -17,7 +27,7 @@
     padding-top: 132px;
 
     background-image: url(..//..//src/images/contact.b-i.png),
-      linear-gradient(to bottom, #ffffff 23.4%, #fff5f6 23.4%, #fff5f6);
+      linear-gradient(to bottom, $primaryBgColor 23.4%, $secondaryBgColor 23.4%, $secondaryBgColor);
   }
 }
 
@@ -270,6 +280,7 @@
 }
 
 // -------modal
+// backdrop
 .contacts__map {
   position: fixed;
   top: 0;
@@ -291,6 +302,7 @@
   }
 }
 
+// modal window
 .contacts__map-wrap {
   position: absolute;
   top: 50%;
