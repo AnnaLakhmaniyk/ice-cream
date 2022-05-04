@@ -1,32 +1,122 @@
 <div class="backdrop-buynow is-hidden" data-modal>
-  <div class="modal">
-    <button class="modal__btn" type="button" aria-label="form window switcher" data-modal-close>
-      <svg class="modal__btn-icon" width="14" height="14">
+  <div class="basket">
+    <button class="basket__btn" type="button" aria-label="form window switcher" data-modal-close>
+      <svg class="basket__btn-icon" width="14" height="14">
         <use href="../src/images/sprite.svg#close"></use>
       </svg>
     </button>
-    <p class="modal__tittle">Contact me</p>
-    <form class="modal__form">
-      <div class="modal__wrap">
-        <input type="text" name="user-name" placeholder=" " id="user-name" class="modal__input" />
-        <label for="user-name" class="modal__label">Name</label>
-      </div>
-      <div class="modal__wrap">
-        <input type="tel" name="user-tel" placeholder=" " id="user-tel" class="modal__input" />
-        <label for="user-tel" class="modal__label">Phone</label>
-      </div>
-      <div class="modal__wrap">
-        <input
-          type="email"
-          name="user-email"
-          placeholder=" "
-          id="user-email"
-          class="modal__input"
-        />
-        <label for="user-email" class="modal__label">Email</label>
-      </div>
+    <h2 class="basket__tittle">Cart</h2>
+    <ul class="basket__list">
+      <li class="basket__item">
+        <picture>
+          <source
+            srcset="
+              ../src/images/basket-tab-1-min.png    1x,
+              ../src/images/basket-tab-1-2x-min.png 2x,
+              ../src/images/basket-tab-1-3x-min.png 3x
+            "
+            media="(min-width:768px)"
+          />
 
-      <button type="submit" class="button-accent modal__btn-go">Submit</button>
-    </form>
+          <source
+            srcset="
+              ../src/images/basket-mob-1-min.png    1x,
+              ../src/images/basket-mob-1-2x-min.png 2x,
+              ../src/images/basket-mob-1-3x-min.png 3x
+            "
+            media="(min-width:320px)"
+          />
+          <img class="basket__image" src="../src/images/basket-mob-1-min.png" alt="ice-cream" />
+        </picture>
+
+        <div class="basket__wrap">
+          <p class="basket__text">Ice Cream</p>
+          <div class="basket__btn-wrap">
+            <button class="basket__btn-minus" type="button" data-action="minus">
+              <span class="basket__btn-minus-icon"></span>
+            </button>
+            <span class="basket__quantity" data-quantity>0</span>
+            <button class="basket__btn-plus" type="button" data-action="plus">
+              <span class="basket__btn-plus-icon"></span>
+            </button>
+          </div>
+          <span class="basket__price" id="current-price">4 &dollar;</span>
+        </div>
+      </li>
+      <li class="basket__item">
+        <picture>
+          <source
+            srcset="
+              ../src/images/basket-tab-2-min.png    1x,
+              ../src/images/basket-tab-2-2x-min.png 2x,
+              ../src/images/basket-tab-2-3x-min.png 3x
+            "
+            media="(min-width:768px)"
+          />
+
+          <source
+            srcset="
+              ../src/images/basket-mob-2-min.png    1x,
+              ../src/images/basket-mob-2-2x-min.png 2x,
+              ../src/images/basket-mob-2-3x-min.png 3x
+            "
+            media="(min-width:320px)"
+          />
+          <img class="basket__image" src="../src/images/basket-mob-2-min.png" alt="ice-coffe" />
+        </picture>
+        <div class="basket__wrap">
+          <p class="basket__text">Ice Coffe</p>
+          <div class="basket__btn-wrap">
+            <button class="basket__btn-minus" type="button" data-action="minus">
+              <span class="basket__btn-minus-icon"></span>
+            </button>
+            <span class="basket__quantity" data-quantity>0</span>
+            <button class="basket__btn-plus" type="button" data-action="plus">
+              <span class="basket__btn-plus-icon"></span>
+            </button>
+          </div>
+          <span class="basket__price" id="current-price">5 &dollar;</span>
+        </div>
+      </li>
+      <li class="basket__item">
+        <picture>
+          <source
+            srcset="
+              ../src/images/basket-tab-3-min.png    1x,
+              ../src/images/basket-tab-3-2x-min.png 2x,
+              ../src/images/basket-tab-3-3x-min.png 3x
+            "
+            media="(min-width:768px)"
+          />
+
+          <source
+            srcset="
+              ../src/images/basket-mob-3-min.png    1x,
+              ../src/images/basket-mob-3-2x-min.png 2x,
+              ../src/images/basket-mob-3-3x-min.png 3x
+            "
+            media="(min-width:320px)"
+          />
+          <img class="basket__image" src="../src/images/basket-mob-3-min.png" alt="milkchakes" />
+        </picture>
+        <div class="basket__wrap">
+          <p class="basket__text">Milkchakes</p>
+          <div class="basket__btn-wrap">
+            <button class="basket__btn-minus" type="button" data-action="minus">
+              <span class="basket__btn-minus-icon"></span>
+            </button>
+            <span class="basket__quantity" data-quantity>0</span>
+            <button class="basket__btn-plus" type="button" data-action="plus">
+              <span class="basket__btn-plus-icon"></span>
+            </button>
+          </div>
+          <span class="basket__price" id="current-price">6 &dollar;</span>
+        </div>
+      </li>
+    </ul>
+
+    <button type="submit" class="button-accent basket__btn-go">
+      Go to chekout<span class="btn-price" id="total-price"></span>&dollar;
+    </button>
   </div>
 </div>

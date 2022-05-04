@@ -18,11 +18,17 @@
   }
 }
 
-.modal {
-  width: 95%;
+.btn-price {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.basket {
+  width: 98%;
+
   max-width: 320px;
-  min-height: 420px;
-  padding: 15px;
+  min-height: 600px;
+  padding: 25px;
 
   background-color: $primaryBgColor;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -30,7 +36,8 @@
   border-radius: 4px;
 
   @include media(768px) {
-    max-width: 358px;
+    max-width: 702px;
+    min-height: 815px;
   }
 
   &__btn {
@@ -55,49 +62,114 @@
   }
 
   &__tittle {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 
     font-family: 'Titan One';
     @include font(null, 20px, 1.13, 0.06em, uppercase);
     text-align: center;
     color: $accentColor;
-  }
 
-  &__wrap {
-    position: relative;
-    margin-bottom: 25px;
-  }
-
-  &__input {
-    width: 100%;
-    height: 34px;
-    padding-left: 16px;
-
-    @include font(500, 12px, 1.33, 0.04em, null);
-    font-family: 'DM Sans';
-
-    border-radius: 22px;
-    border: 1px solid $heroBgColor;
-    outline: $accentColor;
-
-    transition: border-color 250ms cubic-bezier(0.07, 0.96, 0.54, 0.88);
-
-    &:hover,
-    &:focus {
-      border-color: $accentColor;
+    @include media(768px) {
+      margin-bottom: 40px;
+      font-size: 24px;
     }
   }
 
-  &__label {
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
+
+  &__wrap {
+    @include media(768px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    @include font(700, 16px, 1.31, null, null);
+    color: $accentColor;
+
+    @include media(767px, max-width) {
+      margin-bottom: 10px;
+    }
+
+    @include media(768px) {
+      margin-right: 72px;
+      font-size: 24px;
+    }
+  }
+
+  &__btn-wrap {
+    display: flex;
+    align-items: center;
+
+    @include media(767px, max-width) {
+      margin-bottom: 10px;
+      justify-content: space-between;
+    }
+
+    @include media(768px) {
+      margin-right: 45px;
+    }
+  }
+
+  &__btn-minus,
+  &__btn-plus {
+    @include centeredFlex;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: $secondaryBgColor;
+  }
+
+  &__btn-minus-icon,
+  &__btn-plus-icon {
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background-color: $accentColor;
+  }
+
+  &__btn-plus-icon::before {
+    content: '';
     position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background-color: $accentColor;
+    transform: rotate(90deg);
+  }
 
-    @include font(500, 12px, 1.33, 0.04em, null);
-    color: $heroBgColor;
+  &__quantity {
+    @include font(700, 16px, 1.31, null, null);
+    color: $accentColor;
 
-    transition: transform 250ms cubic-bezier(0.07, 0.96, 0.54, 0.88);
+    @include media(768px) {
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 18px;
+    }
+  }
+
+  &__price {
+    display: block;
+    text-align: center;
+    @include font(700, 16px, 1.31, null, null);
+    color: $accentColor;
+
+    @include media(768px) {
+      font-size: 18px;
+    }
   }
 
   &__btn-go {
@@ -106,7 +178,7 @@
     margin-right: auto;
     width: 100%;
     max-width: 220px;
-    margin-top: 65px;
+    margin-top: 40px;
 
     @include font(700, 16px, 1.31, 0.04em, null);
 
@@ -116,8 +188,8 @@
     }
   }
 
-  &__input:focus + &__label,
-  &__input:not(:placeholder-shown) + &__label {
-    transform: translateY(-37px);
-  }
+  // &__input:focus + &__label,
+  // &__input:not(:placeholder-shown) + &__label {
+  //   transform: translateY(-37px);
+  // }
 }
