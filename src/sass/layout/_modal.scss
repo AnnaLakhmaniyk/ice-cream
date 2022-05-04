@@ -18,6 +18,11 @@
   }
 }
 
+.btn-price {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
 .basket {
   width: 98%;
 
@@ -156,7 +161,7 @@
     }
   }
 
-  &__sum {
+  &__price {
     display: block;
     text-align: center;
     @include font(700, 16px, 1.31, null, null);
