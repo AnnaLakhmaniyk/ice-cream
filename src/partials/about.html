@@ -67,7 +67,11 @@
           maximus. Cras massa nibh, tincidunt.
         </p>
         <p class="about__subdescription-text">Aliquam erat volutpat. Aenean accumsan.</p>
-        <button class="about__button button-primary btn-primary-flicker" data-about-open>
+        <button
+          class="about__button button-primary btn-primary-flicker"
+          aria-label="read more"
+          data-about-open
+        >
           Read more
           <svg class="about__svg">
             <use href="../src/images/sprite.svg#pointer-small"></use>
@@ -80,7 +84,7 @@
   <!-- модальне вікно -->
   <div class="backdrop__about is-hidden" data-about>
     <div class="backdrop__modal">
-      <button class="about__btn" type="button" data-about-close>
+      <button class="about__btn" type="button" aria-label="read less" data-about-close>
         <svg class="about__btn-icon" width="14" height="14">
           <use href="../src/images/sprite.svg#close"></use>
         </svg>
