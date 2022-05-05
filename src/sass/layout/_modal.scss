@@ -150,7 +150,6 @@
   &__btn-plus::after {
     content: '';
     position: absolute;
-    left: calc(50% -1px);
     top: 50%;
     transform: translateY(-50%);
     display: block;
