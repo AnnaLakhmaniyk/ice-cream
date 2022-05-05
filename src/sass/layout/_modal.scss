@@ -24,6 +24,7 @@
 }
 
 .basket {
+  position: relative;
   width: 98%;
 
   max-width: 320px;
@@ -31,8 +32,7 @@
   padding: 25px;
 
   background-color: $primaryBgColor;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+
   border-radius: 4px;
 
   @include media(768px) {
@@ -122,27 +122,37 @@
 
   &__btn-minus,
   &__btn-plus {
+    position: relative;
     @include centeredFlex;
     width: 31px;
     height: 31px;
     border-radius: 50%;
     background-color: $secondaryBgColor;
+
+    &:hover,
+    &:focus {
+      background-color: $btnPrimaryHoverColor;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: calc(50% -1px);
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      width: 16px;
+      height: 1px;
+      background-color: $accentColor;
+    }
   }
 
-  &__btn-minus-icon,
-  &__btn-plus-icon {
-    position: relative;
-    display: block;
-    width: 16px;
-    height: 1px;
-    background-color: $accentColor;
-  }
-
-  &__btn-plus-icon::before {
+  &__btn-plus::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    left: calc(50% -1px);
+    top: 50%;
+    transform: translateY(-50%);
     display: block;
     width: 16px;
     height: 1px;
