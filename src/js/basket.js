@@ -1,19 +1,4 @@
 window.addEventListener('click', function (event) {
-  const basketItems = document.querySelectorAll('.basket__item');
-
-  let totalPrice = 0;
-
-  basketItems.forEach(function (item) {
-    const amountEl = item.querySelector('[data-quantity]');
-    const priceEl = item.querySelector('#current-price');
-
-    const currentPrice = Number(parseInt(amountEl.innerText)) * Number(parseInt(priceEl.innerText));
-
-    totalPrice += currentPrice;
-  });
-
-  document.querySelector('#total-price').textContent = totalPrice;
-
   let quantity;
 
   if (event.target.dataset.action === 'plus' || event.target.dataset.action === 'minus') {
@@ -33,10 +18,19 @@ window.addEventListener('click', function (event) {
       quantity.innerText = --quantity.innerText;
     }
   }
+
+  const basketItems = document.querySelectorAll('.basket__item');
+
+  let totalPrice = 0;
+
+  basketItems.forEach(function (item) {
+    const amountEl = item.querySelector('[data-quantity]');
+    const priceEl = item.querySelector('.basket__price');
+
+    const currentPrice = Number(parseInt(amountEl.innerText)) * Number(parseInt(priceEl.innerText));
+
+    totalPrice += currentPrice;
+  });
+
+  document.querySelector('#total-price').textContent = totalPrice;
 });
-
-// target
-
-// onclick
-
-// event
