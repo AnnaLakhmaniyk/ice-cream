@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "all-animation": "^3.0.5",
-    "animate.css": "^4.1.1"
+    "animate.css": "^4.1.1",
+    "simplelightbox": "^2.10.3"
   }
 }
