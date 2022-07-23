@@ -6,4 +6,4 @@ var t=arguments[3];function e(t){return(e="function"==typeof Symbol&&"symbol"==t
 },{}],"chxP":[function(require,module,exports) {
 "use strict";var e=l(require("simplelightbox"));function l(e){return e&&e.__esModule?e:{default:e}}require("simplelightbox/dist/simple-lightbox.min.css");const i=new e.default(".gallery__list a",{overlay:!0,overlayOpacity:.7,nav:!0,close:!0});
 },{"simplelightbox":"yx6k","simplelightbox/dist/simple-lightbox.min.css":"kz9M"}]},{},["chxP"], null)
-//# sourceMappingURL=/ice-cream-project/gallery.03b618ad.js.map
+//# sourceMappingURL=/ice-cream/gallery.03b618ad.js.map
