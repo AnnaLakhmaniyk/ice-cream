@@ -3,7 +3,7 @@
 Ice-Cream is a landing for reading various detailed information about ice-cream. Web-site is responsive for mobile desktop and adaptive for tablet also.
 Webp images are added as alternative.
 
-[Hosted application link](https://nadiakhoptiuk.github.io/ice-cream-project/)      
+[Hosted application link](https://annalakhmaniyk.github.io/ice-cream/))      
 
 ## Used technologies
 
